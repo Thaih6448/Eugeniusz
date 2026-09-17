@@ -24,7 +24,7 @@ namespace Eugeniusz
     {
         public uint ContextSize;
         public int Threads, GpuLayers;
-        public static ModelOptions Default => new ModelOptions { ContextSize = 4096, Threads = 4, GpuLayers = 0 };
+        public static ModelOptions Default => Native.eg_llama_options_default();
     }
 
     [StructLayout(LayoutKind.Sequential)]
@@ -44,6 +44,7 @@ namespace Eugeniusz
 
     internal static class Native
     {
+        [DllImport("eugeniusz_llama", CallingConvention = CallingConvention.Cdecl)] internal static extern ModelOptions eg_llama_options_default();
         [DllImport("eugeniusz", CallingConvention = CallingConvention.Cdecl)] internal static extern uint eg_abi_version();
         [DllImport("eugeniusz", CallingConvention = CallingConvention.Cdecl)] internal static extern IntPtr eg_last_error();
         [DllImport("eugeniusz", CallingConvention = CallingConvention.Cdecl)] internal static extern void eg_engine_destroy(IntPtr engine);

@@ -5,6 +5,7 @@
 #include <cstdio>
 #include <cstring>
 #include <cmath>
+#include <cctype>
 #include <filesystem>
 #include <limits>
 #include <memory>
@@ -46,7 +47,8 @@ void initialize_backends() {
 #endif
         if (library.empty()) throw std::runtime_error("Cannot locate backend library directory");
         auto directory = library.parent_path().u8string();
-        ggml_backend_load_all_from_path(directory.c_str());
+        // u8string stores UTF-8 in both C++17 (char) and C++20 (char8_t).
+        ggml_backend_load_all_from_path(reinterpret_cast<const char *>(directory.c_str()));
     }
     llama_backend_init();
 }
@@ -94,7 +96,9 @@ struct Backend {
         }
         body += hybrid_template ? "\nSelect one option. /no_think\n" : "\nSelect one option.\n";
         auto content = tokenize(body, false);
-        auto suffix = tokenize(hybrid_template ? "<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n" : "<|im_end|>\n<|im_start|>assistant\n", true);
+        // A fixed answer prefix removes first-token formatting ambiguity. The
+        // matching label tokens include the space that follows this colon.
+        auto suffix = tokenize(hybrid_template ? "<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nAnswer:" : "<|im_end|>\n<|im_start|>assistant\nAnswer:", true);
         tokens.insert(tokens.end(), content.begin(), content.end());
         tokens.insert(tokens.end(), suffix.begin(), suffix.end());
         prefill(tokens);
@@ -193,18 +197,24 @@ int32_t eg_llama_create_with_system_prompt(const char *path, const eg_llama_opti
         if (!backend->model) return fail(EG_BACKEND_ERROR, "Failed to load GGUF model; see llama.cpp diagnostics");
         const char *chat_template = llama_model_chat_template(backend->model, nullptr);
         if (!chat_template || !std::strstr(chat_template, "<|im_start|>"))
-            return fail(EG_BACKEND_ERROR, "Expected a Qwen3 ChatML template");
+            return fail(EG_BACKEND_ERROR, "Expected a supported ChatML template");
         // Instruct-2507 mentions historical <think> blocks but does not append
         // one for new answers. Only the hybrid template has enable_thinking.
         backend->hybrid_template = std::strstr(chat_template, "enable_thinking") != nullptr;
         char architecture[64]{};
         llama_model_meta_val_str(backend->model, "general.architecture", architecture, sizeof(architecture));
-        if (std::strcmp(architecture, "qwen3") != 0) return fail(EG_BACKEND_ERROR, "This backend supports Qwen3 dense chat models only; use Qwen3-0.6B-GGUF");
+        char model_name[256]{};
+        llama_model_meta_val_str(backend->model, "general.name", model_name, sizeof(model_name));
+        std::string name(model_name);
+        std::transform(name.begin(), name.end(), name.begin(), [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+        const bool smollm2 = std::strcmp(architecture, "llama") == 0 && name.find("smollm2") != std::string::npos;
+        if (std::strcmp(architecture, "qwen3") != 0 && std::strcmp(architecture, "qwen2") != 0 && !smollm2)
+            return fail(EG_BACKEND_ERROR, "Supported dense ChatML models are Qwen2, Qwen3, and SmolLM2");
         if (config.context_size > static_cast<uint32_t>(llama_model_n_ctx_train(backend->model)))
             return fail(EG_INVALID_ARGUMENT, "Requested context exceeds model training context");
         for (int i = 0; i < EG_MAX_OPTIONS; ++i) {
-            auto label = backend->tokenize(std::string(1, static_cast<char>('A' + i)), false);
-            if (label.size() != 1) return fail(EG_BACKEND_ERROR, "Model tokenizer must encode A-Z as individual tokens");
+            auto label = backend->tokenize(std::string(" ") + static_cast<char>('A' + i), false);
+            if (label.size() != 1) return fail(EG_BACKEND_ERROR, "Model tokenizer must encode space-prefixed A-Z as individual tokens");
             backend->labels[i] = label[0];
         }
         auto context_options = llama_context_default_params();

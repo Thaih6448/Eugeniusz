@@ -42,6 +42,8 @@ public static class SampleRuntime
                     // Model discovery is optional. A broken profile must not prevent opening the picker.
                 }
             }
+            string? selected = FindProfileModel(root, "light");
+            if (selected != null) return selected;
             foreach (string relative in new[] { "models/downloads/Qwen3-0.6B-Q4_0.gguf", "models/Qwen3-0.6B-Q4_0.gguf" })
             {
                 string path = Path.Combine(root, relative);
@@ -49,6 +51,24 @@ public static class SampleRuntime
             }
         }
         return "";
+    }
+
+    public static string? FindProfileModel(string root, string profile)
+    {
+        string manifest = Path.Combine(root, "models", "profiles.json");
+        if (!File.Exists(manifest)) return null;
+        try
+        {
+            using var data = System.Text.Json.JsonDocument.Parse(File.ReadAllText(manifest));
+            string filename = data.RootElement.GetProperty(profile).GetProperty("file").GetString()!;
+            foreach (string directory in new[] { "models/downloads", "models" })
+            {
+                string path = Path.Combine(root, directory, filename);
+                if (File.Exists(path)) return path;
+            }
+        }
+        catch (Exception error) when (error is IOException or UnauthorizedAccessException or System.Text.Json.JsonException or KeyNotFoundException or ArgumentException or InvalidOperationException) { }
+        return null;
     }
 
     public static void Configure()

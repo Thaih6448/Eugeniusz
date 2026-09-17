@@ -16,7 +16,7 @@ public sealed class DrivingForm : SampleForm
     private readonly List<object> trace = new();
     public DrivingForm() : base("Model drives a car")
     {
-        Model.PreferModel("Qwen3-1.7B-Q8_0.gguf");
+        Model.PreferProfile("medium");
         Model.PreferModel("Qwen3-4B-Instruct-2507-Q4_K_M.gguf");
         Model.SystemPrompt = DrivingGame.SystemPrompt;
         log.ReadOnly = true; log.Font = new Font("Consolas", 9);

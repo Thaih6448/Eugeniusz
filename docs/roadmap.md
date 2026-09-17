@@ -5,6 +5,7 @@ should be driven by measured application needs:
 
 1. Establish a licensed, representative multilingual evaluation corpus covering
    routing, rubrics, factual propositions, ambiguity and out-of-distribution inputs.
+   The current 300 authored diagnostic prompts are a starting point, not that corpus.
 2. Measure latency/VRAM on an actual RTX 4060 8 GB while the target application is
    rendering; benchmark context length scaling and cold-start costs.
 3. Train and release task calibration artifacts with reproducible split provenance.

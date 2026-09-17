@@ -57,3 +57,8 @@ Choose thresholds using held-out risk/coverage curves and the actual cost of mis
 The examples' thresholds are placeholders, not recommendations for a real application.
 Persist metadata with fitted parameters, and re-evaluate when the model, prompt,
 class list, backend or deployment data changes.
+
+The current `Answer:` / space-prefixed-label adapter and refreshed small/large
+profiles change the logits. Old calibration values must not be reused. The
+300-case diagnostic reports raw NLL, Brier, ECE, and high-confidence errors; it
+does not fit a universal temperature or certify probability calibration.

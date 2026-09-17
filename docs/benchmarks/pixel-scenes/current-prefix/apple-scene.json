@@ -1,0 +1,32 @@
+{
+  "background": "Sky blue",
+  "layers": [
+    {
+      "name": "apple",
+      "shape": "ellipse",
+      "color": "Red",
+      "x": 0.5,
+      "y": 0.4,
+      "width": 0.4,
+      "height": 0.4
+    },
+    {
+      "name": "stem",
+      "shape": "rectangle",
+      "color": "Brown",
+      "x": 0.45,
+      "y": 0.65,
+      "width": 0.1,
+      "height": 0.15
+    },
+    {
+      "name": "leaf",
+      "shape": "triangle",
+      "color": "Green",
+      "x": 0.5,
+      "y": 0.75,
+      "width": 0.2,
+      "height": 0.1
+    }
+  ]
+}

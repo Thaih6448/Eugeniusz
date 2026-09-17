@@ -79,6 +79,17 @@ public sealed class ModelPanel : UserControl
         }
     }
 
+    public void PreferProfile(string profile)
+    {
+        if (!string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("EUGENIUSZ_MODEL"))) return;
+        if (SampleRuntime.Ancestors().Any(root => File.Exists(Path.Combine(root, "profile.json")))) return;
+        foreach (string root in SampleRuntime.Ancestors())
+        {
+            string? path = SampleRuntime.FindProfileModel(root, profile);
+            if (path != null) { ModelPath.Text = path; return; }
+        }
+    }
+
     public Task<Result> EvaluateAsync(string state, string question, string[] criteria, Kind kind,
         CancellationToken cancellation, double temperature = 1, double threshold = 0)
         => ExecuteAsync(engine => engine.Evaluate(state, question, criteria, kind, temperature, threshold), cancellation);

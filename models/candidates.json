@@ -1,0 +1,117 @@
+{
+  "qwen25-small-q4": {
+    "repository": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+    "revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+    "file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+    "bytes": 491400032,
+    "license": "Apache-2.0",
+    "context_size": 2048,
+    "gpu_layers": 99,
+    "cpu_supported": true
+  },
+  "qwen25-medium-q4": {
+    "repository": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+    "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+    "file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+    "bytes": 1117320736,
+    "license": "Apache-2.0",
+    "context_size": 4096,
+    "gpu_layers": 99,
+    "cpu_supported": false
+  },
+  "smollm2-small-q8": {
+    "repository": "HuggingFaceTB/SmolLM2-360M-Instruct-GGUF",
+    "revision": "593b5a2e04c8f3e4ee880263f93e0bd2901ad47f",
+    "file": "smollm2-360m-instruct-q8_0.gguf",
+    "sha256": "48ab3034d0dd401fbc721eb1df3217902fee7dab9078992d66431f09b7750201",
+    "bytes": 386404992,
+    "license": "Apache-2.0",
+    "context_size": 2048,
+    "gpu_layers": 99,
+    "cpu_supported": true,
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+  },
+  "smollm2-medium-q4": {
+    "repository": "HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF",
+    "revision": "2d4a76a30b4af41ecd395c35725ac11688d4cfe4",
+    "file": "smollm2-1.7b-instruct-q4_k_m.gguf",
+    "sha256": "decd2598bc2c8ed08c19adc3c8fdd461ee19ed5708679d1c54ef54a5a30d4f33",
+    "bytes": 1055609536,
+    "license": "Apache-2.0",
+    "context_size": 4096,
+    "gpu_layers": 99,
+    "cpu_supported": false,
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+  },
+  "qwen3-small-q8": {
+    "repository": "Qwen/Qwen3-0.6B-GGUF",
+    "revision": "23749fefcc72300e3a2ad315e1317431b06b590a",
+    "file": "Qwen3-0.6B-Q8_0.gguf",
+    "sha256": "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031",
+    "bytes": 639446688,
+    "license": "Apache-2.0",
+    "context_size": 2048,
+    "gpu_layers": 99,
+    "cpu_supported": true
+  },
+  "instruct-medium-q3": {
+    "repository": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+    "revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+    "file": "Qwen3-4B-Instruct-2507-Q3_K_S.gguf",
+    "sha256": "0ce20058cc0ed6b6c9213bb383589327e458c12ffce0842fc96867042d669c75",
+    "bytes": 1886997600,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/resolve/cdbee75f17c01a7cc42f958dc650907174af0554/LICENSE",
+    "context_size": 4096,
+    "gpu_layers": 99,
+    "cpu_supported": false
+  },
+  "legacy-light": {
+    "repository": "ggml-org/Qwen3-0.6B-GGUF",
+    "revision": "b5f37287796e5be0ea3dab2e7430873fb3f73e49",
+    "file": "Qwen3-0.6B-Q4_0.gguf",
+    "sha256": "da2572f16c06133561ce56accaa822216f2391ef4d37fba427801cd6736417d4",
+    "bytes": 428970080,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/Qwen/Qwen3-0.6B-GGUF/resolve/23749fefcc72300e3a2ad315e1317431b06b590a/LICENSE",
+    "context_size": 2048,
+    "gpu_layers": 99,
+    "cpu_supported": true
+  },
+  "legacy-medium": {
+    "repository": "Qwen/Qwen3-1.7B-GGUF",
+    "revision": "90862c4b9d2787eaed51d12237eafdfe7c5f6077",
+    "file": "Qwen3-1.7B-Q8_0.gguf",
+    "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
+    "bytes": 1834426016,
+    "license": "Apache-2.0",
+    "context_size": 4096,
+    "gpu_layers": 99,
+    "cpu_supported": false
+  },
+  "legacy-large": {
+    "repository": "Qwen/Qwen3-4B-GGUF",
+    "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "file": "Qwen3-4B-Q4_K_M.gguf",
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "bytes": 2497280256,
+    "license": "Apache-2.0",
+    "context_size": 4096,
+    "gpu_layers": 99,
+    "cpu_supported": false
+  },
+  "instruct-large-q4": {
+    "repository": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+    "revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+    "file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+    "bytes": 2497281120,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/resolve/cdbee75f17c01a7cc42f958dc650907174af0554/LICENSE",
+    "context_size": 4096,
+    "gpu_layers": 99,
+    "cpu_supported": true
+  }
+}

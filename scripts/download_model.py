@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 import urllib.request
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -17,16 +18,21 @@ def digest(path):
 
 
 def download(profile, output):
+    profile = "light" if profile == "small" else profile
     spec = json.loads((ROOT / "models/profiles.json").read_text())[profile]
     return download_spec(profile, spec, output)
 
 
 def download_spec(profile, spec, output):
+    if "license_url" in spec:
+        url = urlsplit(spec["license_url"])
+        if url.scheme != "https" or not url.netloc:
+            raise ValueError("Model license_url must be an absolute HTTPS URL")
     output.mkdir(parents=True, exist_ok=True)
     target = output / spec["file"]
     base = f'https://huggingface.co/{spec["repository"]}/resolve/{spec["revision"]}/'
     if not target.exists() or digest(target) != spec["sha256"]:
-        partial = target.with_suffix(".part")
+        partial = target.with_name(target.name + ".part")
         print(f'Downloading {profile}: {spec["bytes"] / 1e6:.1f} MB', flush=True)
         with urllib.request.urlopen(base + spec["file"], timeout=120) as source, partial.open("wb") as destination:
             while True:
@@ -48,7 +54,7 @@ def download_spec(profile, spec, output):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("profile", choices=("light", "medium", "large"))
+    parser.add_argument("profile", choices=("small", "light", "medium", "large"))
     parser.add_argument("--output", type=Path, default=ROOT / "models/downloads")
     args = parser.parse_args()
     download(args.profile, args.output)

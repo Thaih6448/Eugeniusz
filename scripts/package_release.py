@@ -1,6 +1,7 @@
 """Create one self-contained profile bundle from an installed native prefix."""
 import argparse
 import json
+import re
 from pathlib import Path
 import shutil
 import zipfile
@@ -8,15 +9,27 @@ from download_model import digest, ROOT
 from archive_parts import split_archive
 
 
+def installed_version(prefix):
+    configs = list(prefix.glob("**/cmake/Eugeniusz/EugeniuszConfigVersion.cmake"))
+    if len(configs) != 1:
+        raise ValueError(f"Expected one installed SDK version file in {prefix}")
+    config = configs[0]
+    match = re.search(r'set\(PACKAGE_VERSION "([0-9]+\.[0-9]+\.[0-9]+)"\)', config.read_text(encoding="utf-8"))
+    if not match:
+        raise ValueError(f"Cannot read SDK version from {config}")
+    return match.group(1)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("profile", choices=("light", "medium", "large"))
+    parser.add_argument("profile", choices=("small", "light", "medium", "large"))
     parser.add_argument("--backend", choices=("cpu", "vulkan", "cuda", "metal"), required=True)
     parser.add_argument("--platform", required=True, help="For example windows-x64 or linux-x64")
     parser.add_argument("--prefix", type=Path, required=True, help="Installed native SDK")
     parser.add_argument("--models", type=Path, default=ROOT / "models/downloads")
     parser.add_argument("--output", type=Path, default=ROOT / "dist")
     args = parser.parse_args()
+    args.profile = "light" if args.profile == "small" else args.profile
     if args.backend == "cpu" and args.profile != "light":
         raise SystemExit("Only the light CPU variant is part of the release matrix")
     spec = json.loads((ROOT / "models/profiles.json").read_text())[args.profile]
@@ -30,7 +43,7 @@ def main():
         raise SystemExit("An installed shared inference adapter is required")
     if args.backend != "cpu" and not any(f"ggml-{args.backend}" in p.name for p in runtime_files):
         raise SystemExit(f"The prefix has no {args.backend} runtime library")
-    name = f"eugeniusz-0.1.0-{args.profile}-{args.platform}-{args.backend}"
+    name = f"eugeniusz-{installed_version(args.prefix)}-{args.profile}-{args.platform}-{args.backend}"
     stage = args.output / name
     if stage.exists():
         raise SystemExit("Bundle directory already exists; use a new output directory")
@@ -40,12 +53,14 @@ def main():
     model_dir.mkdir()
     shutil.copy2(ROOT / "models/profiles.json", model_dir)
     shutil.copy2(ROOT / "models/pixel-profile.json", model_dir)
+    shutil.copy2(ROOT / "models/candidates.json", model_dir)
+    shutil.copy2(ROOT / "models/profiles.previous.json", model_dir)
     shutil.copy2(model, model_dir / model.name)
     for suffix in ("LICENSE.txt", "MODEL_CARD.md", "provenance.json"):
         shutil.copy2(args.models / f"{args.profile}-{suffix}", model_dir)
-    for filename in ("LICENSE", "README.md", "THIRD_PARTY_NOTICES.md"):
+    for filename in ("LICENSE", "README.md", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md", "SECURITY.md"):
         shutil.copy2(ROOT / filename, stage)
-    for directory in ("docs", "examples", "bindings", "third_party", "scripts"):
+    for directory in ("docs", "examples", "bindings", "third_party", "scripts", "tests"):
         shutil.copytree(ROOT / directory, stage / directory,
                         ignore=shutil.ignore_patterns("bin", "obj", "__pycache__", "*.egg-info"))
     managed = ROOT / "bindings/dotnet/Eugeniusz/bin/Release/netstandard2.1/Eugeniusz.Managed.dll"

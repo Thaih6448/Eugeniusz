@@ -1,0 +1,41 @@
+[
+  {
+    "file": "demo-driving.gif",
+    "source": "Model drives a car _ Eugeniusz 2026-09-17 13-52-14.mp4",
+    "source_start_seconds": 6,
+    "source_duration_seconds": 38.3,
+    "playback_speed": 2,
+    "width": 840,
+    "fps": 12,
+    "crop_top_pixels": 132,
+    "end_hold_seconds": 1.2,
+    "bytes": 2534718,
+    "sha256": "72b3b78550be4f4106a0d3b8d611c1ab756d473a9d8d48f8c6f9f6119b490082"
+  },
+  {
+    "file": "demo-snake.gif",
+    "source": "Model plays Snake _ Eugeniusz 2026-09-17 11-37-15.mp4",
+    "source_start_seconds": 0,
+    "source_duration_seconds": 9.67,
+    "playback_speed": 1,
+    "width": 600,
+    "fps": 12,
+    "crop_top_pixels": 132,
+    "end_hold_seconds": 1.2,
+    "bytes": 566688,
+    "sha256": "38dc14fec0608a74f478281d2a0a1e85c08bfbe1cc95a7ae72a5bc8dcef95c18"
+  },
+  {
+    "file": "demo-pixel-art.gif",
+    "source": "16-color pixel generator _ Eugeniusz 2026-09-17 13-06-31.mp4",
+    "source_start_seconds": 4,
+    "source_duration_seconds": 34.14,
+    "playback_speed": 2.5,
+    "width": 600,
+    "fps": 10,
+    "crop_top_pixels": 132,
+    "end_hold_seconds": 1.2,
+    "bytes": 572429,
+    "sha256": "0e9f783e69f2b728b8b42be94337c08ea66ecd43e3061b1d7ed12db4c5579e1a"
+  }
+]

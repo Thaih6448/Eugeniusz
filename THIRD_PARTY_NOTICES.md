@@ -6,10 +6,11 @@ Eugeniusz's original source is MIT licensed. Model weights retain their own lice
 | --- | --- | --- |
 | llama.cpp / ggml | b6500, a7a98e0fffed794396b3fbad4dcdbbc184963645 | MIT |
 | Qwen3 0.6B, 1.7B, 4B weights | Pinned in `models/profiles.json` | Apache-2.0 |
-| ggml-org 0.6B GGUF conversion | Pinned in `models/profiles.json` | Apache-2.0, derived from Qwen3 |
-| Optional Qwen3-4B-Instruct-2507 / Unsloth GGUF conversion | Pinned in `models/pixel-profile.json` | Apache-2.0 |
+| Historical ggml-org 0.6B GGUF conversion | Pinned in `models/profiles.previous.json` | Apache-2.0, derived from Qwen3 |
+| Large: Qwen3-4B-Instruct-2507 / Unsloth GGUF conversion | Pinned in `models/profiles.json` and `models/pixel-profile.json` | Apache-2.0 |
+| Evaluated Qwen2.5 and SmolLM2 candidate weights | Pinned in `models/candidates.json`; not included in release bundles | Apache-2.0 |
 
-The optional pixel model is derived from [Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)
+The large profile (also used by PixelArt) is derived from [Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)
 and distributed as [Unsloth GGUF weights](https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF).
 Its downloader retains the upstream license, model card, and exact hash/revision.
 

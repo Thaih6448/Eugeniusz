@@ -20,7 +20,7 @@ public sealed class PixelArtForm : SampleForm
 
     public PixelArtForm() : base("16-color pixel generator")
     {
-        Model.PreferModel("Qwen3-4B-Q4_K_M.gguf");
+        Model.PreferProfile("large");
         Model.PreferModel("Qwen3-4B-Instruct-2507-Q4_K_M.gguf");
         Model.SystemPrompt = PixelScene.RendererSystem;
         var layout = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 1, RowCount = 8 };

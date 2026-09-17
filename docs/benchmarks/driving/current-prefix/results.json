@@ -1,0 +1,29 @@
+[
+  {
+    "seed": 42,
+    "outcome": "Finished",
+    "Decisions": 82,
+    "Time": 24.480000000000736,
+    "Progress": 1,
+    "model": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "backend": "GPU (all layers)"
+  },
+  {
+    "seed": 7,
+    "outcome": "Finished",
+    "Decisions": 83,
+    "Time": 24.682500000000744,
+    "Progress": 1,
+    "model": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "backend": "GPU (all layers)"
+  },
+  {
+    "seed": 103,
+    "outcome": "Finished",
+    "Decisions": 81,
+    "Time": 24.255000000000727,
+    "Progress": 1,
+    "model": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "backend": "GPU (all layers)"
+  }
+]

@@ -23,7 +23,7 @@ The .NET 8 samples use an explicit native resolver; no PATH edits are necessary.
 in the installed layout with their normal loader paths. Then run:
 
 ```sh
-dotnet examples/dotnet/bin/Release/net8.0/Example.dll models/downloads/Qwen3-0.6B-Q4_0.gguf 99
+dotnet examples/dotnet/bin/Release/net8.0/Example.dll models/downloads/Qwen3-0.6B-Q8_0.gguf 99
 ```
 
 Omit `99` for CPU. Running without a model argument performs only the C# ABI check.

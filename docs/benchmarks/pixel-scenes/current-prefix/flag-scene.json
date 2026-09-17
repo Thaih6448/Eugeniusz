@@ -1,0 +1,32 @@
+{
+  "background": "White",
+  "layers": [
+    {
+      "name": "blue stripe",
+      "shape": "rectangle",
+      "color": "Blue",
+      "x": 0,
+      "y": 0,
+      "width": 0.333,
+      "height": 1
+    },
+    {
+      "name": "white stripe",
+      "shape": "rectangle",
+      "color": "White",
+      "x": 0.333,
+      "y": 0,
+      "width": 0.333,
+      "height": 1
+    },
+    {
+      "name": "red stripe",
+      "shape": "rectangle",
+      "color": "Red",
+      "x": 0.666,
+      "y": 0,
+      "width": 0.333,
+      "height": 1
+    }
+  ]
+}

@@ -2,6 +2,9 @@ name: Build and test
 on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   native:
     strategy:
@@ -18,15 +21,17 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
-      - run: cmake -S . -B build/ci -DCMAKE_BUILD_TYPE=Release -DEUGENIUSZ_LLAMA=${{ matrix.llama }}
+      - run: cmake -S . -B build/ci -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_STANDARD=20 -DEUGENIUSZ_LLAMA=${{ matrix.llama }}
       - run: cmake --build build/ci --config Release --parallel 3
       - run: ctest --test-dir build/ci -C Release --output-on-failure
       - run: cmake --install build/ci --config Release --prefix build/install
-      - name: Python ABI tests
+      - name: Python ABI, quality corpus, archive and release tests
         env:
           PYTHONPATH: bindings/python
           EUGENIUSZ_LIBRARY_DIR: build/install
-        run: python -m unittest discover -s tests -p test_python.py -v
+        run: python tests/run_tests.py
+      - name: Benchmark validation with Python optimization enabled
+        run: python -O -m unittest discover -s tests -p test_api_dataset.py -v
       - run: dotnet build examples/dotnet/Example.csproj -c Release
       - name: WinForms build and game rules tests
         if: runner.os == 'Windows'
@@ -49,3 +54,13 @@ jobs:
       - run: cmake -S . -B build/static -DBUILD_SHARED_LIBS=OFF -DCMAKE_BUILD_TYPE=Release
       - run: cmake --build build/static --parallel 2
       - run: ctest --test-dir build/static --output-on-failure
+  sanitizers:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -S . -B build/sanitizers -DCMAKE_BUILD_TYPE=Debug -DBUILD_SHARED_LIBS=OFF -DCMAKE_CXX_FLAGS="-fsanitize=address,undefined -fno-omit-frame-pointer" -DCMAKE_EXE_LINKER_FLAGS="-fsanitize=address,undefined"
+      - run: cmake --build build/sanitizers --parallel 2
+      - run: ctest --test-dir build/sanitizers --output-on-failure
+        env:
+          ASAN_OPTIONS: detect_leaks=1
+          UBSAN_OPTIONS: halt_on_error=1:print_stacktrace=1

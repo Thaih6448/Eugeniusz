@@ -8,6 +8,12 @@ wrappers reject embedded NUL instead of silently truncating their input.
 Create questions with `eg_question_default()` (temperature 1, threshold 0).
 Zero-initializing this structure alone leaves an invalid temperature of zero.
 
+Model defaults in C/C++, Python (`threads=None`) and .NET (`ModelOptions.Default`)
+come from `eg_llama_options_default()`: 4096 context tokens, between 1 and 8 CPU
+threads according to hardware concurrency, and no GPU offload. Specify `threads`
+explicitly when reproducing benchmarks. Reading .NET model defaults requires the
+native inference adapter to be available.
+
 | Kind | Criteria | Result `value` |
 | --- | --- | --- |
 | `EG_CHOICE` | 2–26 distinct descriptions in caller order | Winning zero-based index |
@@ -59,6 +65,11 @@ language model. `eg_fit_temperature()` and `eg_measure()` take row-major arrays
 of logits with one integer true label per row. The header documents conformal
 functions and their bitmask format. C# exposes inference and from-logits; full
 calibration utilities are available through the C API and Python wrapper.
+
+The current typed adapter prefills `Answer:` and scores space-prefixed A–Z tokens.
+This is a prompt-format change, not an ABI or result-semantics change. Refit any
+calibration obtained with the older empty-answer/bare-letter prompt. The release
+model profiles were re-evaluated on 100 cases per kind; see `model-quality.md`.
 
 Supported initial targets: 64-bit Windows/MSVC, Linux/GCC or Clang, and macOS/Apple
 Clang. CI definitions exercise these targets. 32-bit ABI portability is not tested.

@@ -43,13 +43,14 @@ def gpu_info():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("profile", choices=("light", "medium", "large"))
+    parser.add_argument("profile", choices=("small", "light", "medium", "large"))
     parser.add_argument("--library-dir", required=True)
     parser.add_argument("--models", type=Path, default=ROOT / "models/downloads")
     parser.add_argument("--gpu", action="store_true")
     parser.add_argument("--threads", type=int, default=4)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
+    args.profile = "light" if args.profile == "small" else args.profile
     spec = json.loads((ROOT / "models/profiles.json").read_text())[args.profile]
     runtime = Runtime(args.library_dir)
     baseline = gpu_info() if args.gpu else None

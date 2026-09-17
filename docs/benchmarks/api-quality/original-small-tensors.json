@@ -1,0 +1,3016 @@
+{
+  "file": "Qwen3-0.6B-Q4_0.gguf",
+  "bytes": 428970080,
+  "metadata": {
+    "general.architecture": "qwen3",
+    "qwen3.block_count": 28,
+    "qwen3.embedding_length": 1024
+  },
+  "metadata_bytes": 5951584,
+  "groups": {
+    "transformer_blocks": 247984128,
+    "input_embedding": 87515136,
+    "output_head": 87515136,
+    "other": 4096
+  },
+  "tensors": [
+    {
+      "name": "output.weight",
+      "shape": [
+        1024,
+        151936
+      ],
+      "type": 2,
+      "offset": 0,
+      "stored_bytes_including_padding": 87515136
+    },
+    {
+      "name": "output_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 87515136,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "token_embd.weight",
+      "shape": [
+        1024,
+        151936
+      ],
+      "type": 2,
+      "offset": 87519232,
+      "stored_bytes_including_padding": 87515136
+    },
+    {
+      "name": "blk.0.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 175034368,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.0.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 175624192,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.0.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 175624704,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.0.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 175628800,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.0.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 176808448,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.0.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 177988096,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.0.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 177988608,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.0.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 178578432,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.0.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 180347904,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.0.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 182117376,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.0.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 182121472,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.1.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 183890944,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.1.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 184480768,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.1.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 184481280,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.1.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 184485376,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.1.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 185665024,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.1.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 186844672,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.1.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 186845184,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.1.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 187435008,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.1.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 189204480,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.1.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 190973952,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.1.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 190978048,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.2.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 192747520,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.2.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 193337344,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.2.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 193337856,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.2.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 193341952,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.2.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 194521600,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.2.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 195701248,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.2.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 195701760,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.2.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 196291584,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.2.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 198061056,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.2.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 199830528,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.2.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 199834624,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.3.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 201604096,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.3.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 202193920,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.3.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 202194432,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.3.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 202198528,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.3.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 203378176,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.3.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 204557824,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.3.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 204558336,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.3.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 205148160,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.3.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 206917632,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.3.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 208687104,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.3.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 208691200,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.4.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 210460672,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.4.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 211050496,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.4.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 211051008,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.4.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 211055104,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.4.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 212234752,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.4.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 213414400,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.4.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 213414912,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.4.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 214004736,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.4.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 215774208,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.4.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 217543680,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.4.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 217547776,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.5.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 219317248,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.5.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 219907072,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.5.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 219907584,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.5.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 219911680,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.5.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 221091328,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.5.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 222270976,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.5.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 222271488,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.5.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 222861312,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.5.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 224630784,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.5.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 226400256,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.5.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 226404352,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.6.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 228173824,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.6.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 228763648,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.6.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 228764160,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.6.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 228768256,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.6.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 229947904,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.6.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 231127552,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.6.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 231128064,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.6.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 231717888,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.6.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 233487360,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.6.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 235256832,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.6.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 235260928,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.7.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 237030400,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.7.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 237620224,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.7.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 237620736,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.7.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 237624832,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.7.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 238804480,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.7.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 239984128,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.7.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 239984640,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.7.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 240574464,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.7.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 242343936,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.7.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 244113408,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.7.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 244117504,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.8.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 245886976,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.8.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 246476800,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.8.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 246477312,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.8.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 246481408,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.8.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 247661056,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.8.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 248840704,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.8.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 248841216,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.8.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 249431040,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.8.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 251200512,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.8.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 252969984,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.8.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 252974080,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.9.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 254743552,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.9.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 255333376,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.9.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 255333888,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.9.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 255337984,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.9.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 256517632,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.9.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 257697280,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.9.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 257697792,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.9.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 258287616,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.9.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 260057088,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.9.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 261826560,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.9.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 261830656,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.10.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 263600128,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.10.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 264189952,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.10.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 264190464,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.10.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 264194560,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.10.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 265374208,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.10.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 266553856,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.10.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 266554368,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.10.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 267144192,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.10.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 268913664,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.10.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 270683136,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.10.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 270687232,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.11.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 272456704,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.11.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 273046528,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.11.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 273047040,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.11.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 273051136,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.11.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 274230784,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.11.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 275410432,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.11.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 275410944,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.11.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 276000768,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.11.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 277770240,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.11.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 279539712,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.11.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 279543808,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.12.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 281313280,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.12.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 281903104,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.12.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 281903616,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.12.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 281907712,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.12.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 283087360,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.12.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 284267008,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.12.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 284267520,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.12.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 284857344,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.12.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 286626816,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.12.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 288396288,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.12.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 288400384,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.13.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 290169856,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.13.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 290759680,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.13.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 290760192,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.13.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 290764288,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.13.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 291943936,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.13.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 293123584,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.13.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 293124096,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.13.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 293713920,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.13.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 295483392,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.13.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 297252864,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.13.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 297256960,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.14.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 299026432,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.14.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 299616256,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.14.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 299616768,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.14.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 299620864,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.14.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 300800512,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.14.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 301980160,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.14.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 301980672,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.14.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 302570496,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.14.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 304339968,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.14.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 306109440,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.14.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 306113536,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.15.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 307883008,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.15.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 308472832,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.15.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 308473344,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.15.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 308477440,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.15.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 309657088,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.15.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 310836736,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.15.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 310837248,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.15.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 311427072,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.15.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 313196544,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.15.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 314966016,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.15.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 314970112,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.16.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 316739584,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.16.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 317329408,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.16.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 317329920,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.16.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 317334016,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.16.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 318513664,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.16.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 319693312,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.16.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 319693824,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.16.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 320283648,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.16.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 322053120,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.16.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 323822592,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.16.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 323826688,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.17.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 325596160,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.17.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 326185984,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.17.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 326186496,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.17.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 326190592,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.17.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 327370240,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.17.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 328549888,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.17.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 328550400,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.17.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 329140224,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.17.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 330909696,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.17.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 332679168,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.17.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 332683264,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.18.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 334452736,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.18.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 335042560,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.18.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 335043072,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.18.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 335047168,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.18.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 336226816,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.18.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 337406464,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.18.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 337406976,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.18.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 337996800,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.18.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 339766272,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.18.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 341535744,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.18.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 341539840,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.19.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 343309312,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.19.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 343899136,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.19.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 343899648,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.19.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 343903744,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.19.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 345083392,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.19.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 346263040,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.19.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 346263552,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.19.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 346853376,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.19.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 348622848,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.19.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 350392320,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.19.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 350396416,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.20.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 352165888,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.20.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 352755712,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.20.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 352756224,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.20.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 352760320,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.20.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 353939968,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.20.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 355119616,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.20.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 355120128,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.20.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 355709952,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.20.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 357479424,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.20.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 359248896,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.20.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 359252992,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.21.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 361022464,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.21.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 361612288,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.21.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 361612800,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.21.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 361616896,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.21.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 362796544,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.21.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 363976192,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.21.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 363976704,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.21.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 364566528,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.21.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 366336000,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.21.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 368105472,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.21.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 368109568,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.22.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 369879040,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.22.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 370468864,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.22.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 370469376,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.22.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 370473472,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.22.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 371653120,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.22.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 372832768,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.22.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 372833280,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.22.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 373423104,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.22.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 375192576,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.22.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 376962048,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.22.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 376966144,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.23.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 378735616,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.23.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 379325440,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.23.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 379325952,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.23.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 379330048,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.23.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 380509696,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.23.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 381689344,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.23.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 381689856,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.23.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 382279680,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.23.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 384049152,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.23.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 385818624,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.23.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 385822720,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.24.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 387592192,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.24.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 388182016,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.24.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 388182528,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.24.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 388186624,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.24.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 389366272,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.24.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 390545920,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.24.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 390546432,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.24.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 391136256,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.24.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 392905728,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.24.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 394675200,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.24.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 394679296,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.25.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 396448768,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.25.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 397038592,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.25.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 397039104,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.25.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 397043200,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.25.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 398222848,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.25.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 399402496,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.25.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 399403008,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.25.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 399992832,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.25.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 401762304,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.25.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 403531776,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.25.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 403535872,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.26.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 405305344,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.26.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 405895168,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.26.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 405895680,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.26.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 405899776,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.26.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 407079424,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.26.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 408259072,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.26.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 408259584,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.26.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 408849408,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.26.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 410618880,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.26.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 412388352,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.26.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 412392448,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.27.attn_k.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 414161920,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.27.attn_k_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 414751744,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.27.attn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 414752256,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.27.attn_output.weight",
+      "shape": [
+        2048,
+        1024
+      ],
+      "type": 2,
+      "offset": 414756352,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.27.attn_q.weight",
+      "shape": [
+        1024,
+        2048
+      ],
+      "type": 2,
+      "offset": 415936000,
+      "stored_bytes_including_padding": 1179648
+    },
+    {
+      "name": "blk.27.attn_q_norm.weight",
+      "shape": [
+        128
+      ],
+      "type": 0,
+      "offset": 417115648,
+      "stored_bytes_including_padding": 512
+    },
+    {
+      "name": "blk.27.attn_v.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "type": 2,
+      "offset": 417116160,
+      "stored_bytes_including_padding": 589824
+    },
+    {
+      "name": "blk.27.ffn_down.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "type": 2,
+      "offset": 417705984,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.27.ffn_gate.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 419475456,
+      "stored_bytes_including_padding": 1769472
+    },
+    {
+      "name": "blk.27.ffn_norm.weight",
+      "shape": [
+        1024
+      ],
+      "type": 0,
+      "offset": 421244928,
+      "stored_bytes_including_padding": 4096
+    },
+    {
+      "name": "blk.27.ffn_up.weight",
+      "shape": [
+        1024,
+        3072
+      ],
+      "type": 2,
+      "offset": 421249024,
+      "stored_bytes_including_padding": 1769472
+    }
+  ],
+  "note": "Storage inventory only. Keeping 26 output rows requires a custom runtime; input embedding rows and transformer blocks remain necessary. Tied embeddings cannot be removed from input processing."
+}

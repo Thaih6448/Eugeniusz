@@ -4,7 +4,7 @@
 Application (C / C++ / C# / Python / game engine)
     -> eugeniusz: validation, distributions, calibration, uncertainty
         -> backend callback
-            -> eugeniusz_llama: Qwen3 prompt + selected label logits
+            -> eugeniusz_llama: ChatML prompt + selected label logits
                 -> llama.cpp / ggml: CPU, Vulkan, CUDA or Metal
 ```
 
@@ -14,8 +14,13 @@ weights and one inference context. The core owns a callback/user-data pair and c
 the backend under an engine mutex. C++ RAII, Python context managers and .NET
 SafeHandle wrap the same ownership contract.
 
-For every question, the adapter builds a fixed Qwen3 chat frame and maps the supplied
-criteria to A–Z. It validates that each letter is a single token. Only fixed framing
+For every question, the adapter builds a fixed ChatML frame and maps the supplied
+criteria to A–Z. It prefills the assistant prefix `Answer:` and reads the single
+tokens for space-prefixed letters (` A` through ` Z`). Tokenization is validated
+at model load. This framing was selected using the quality diagnostic's development
+cases and replaces the earlier bare-letter scoring at the start of an empty answer.
+It changes logits and invalidates calibration fitted to the previous prompt format.
+Only fixed framing
 is tokenized with special-token recognition; caller text cannot inject a native
 chat-role token. This is not a semantic prompt-injection defense. No sensitive action
 should be authorized solely by model output.
@@ -34,7 +39,9 @@ a provider registry rejects completion calls for non-llama callback engines.
 Both paths clear their context at the beginning of each request. Role markers stay
 fixed and caller text never receives special-token recognition. Hybrid Qwen3
 templates disable thinking explicitly; Instruct-2507 uses a plain assistant prefix,
-detected from the model's template rather than its filename.
+detected from the model's template rather than its filename. Dense Qwen2/Qwen3 and
+SmolLM2 ChatML models are accepted; acceptance means format compatibility, not a
+quality recommendation. The measured release selections are pinned in the profiles.
 
 Batches validate every question before inference, evaluate sequentially, and copy
 outputs only after every evaluation succeeds. One question cannot read another

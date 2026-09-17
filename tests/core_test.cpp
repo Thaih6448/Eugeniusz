@@ -1,6 +1,7 @@
 #include <eugeniusz/eugeniusz.hpp>
 #include <atomic>
 #include <cmath>
+#include <cstdio>
 #include <cstring>
 #include <iostream>
 #include <limits>

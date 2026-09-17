@@ -54,7 +54,7 @@ held-out evaluations and training, not just prompt formatting.
 
 [llama.cpp](https://github.com/ggml-org/llama.cpp) provides C/C++ GGUF inference,
 quantization, CPU execution and several GPU backends under MIT. It allows deployment
-without a Python ML framework. The [Qwen3 4B GGUF model](https://huggingface.co/Qwen/Qwen3-4B-GGUF)
+without a Python ML framework. The [Qwen3-4B-Instruct-2507 GGUF model](https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF)
 and the other selected models are Apache-2.0; exact revisions and file hashes are
 in `models/profiles.json`. This is a manageable first implementation with inspectable
 numerics, not a claim of the best available model in every domain.
@@ -79,3 +79,19 @@ from the GGUF file would also remove input representations and is not a safe gen
 optimization. Transformer blocks are still needed to understand arbitrary text.
 No undocumented weight surgery is included in v0.1. The existing quantized light
 profile provides a measured size reduction without changing tokenizer semantics.
+
+## Measured model selection and pruning assessment
+
+The [300-case quality report](model-quality.md) compares all three original profiles,
+replacement candidates, label formatting, CPU/GPU execution, and tensor inventories.
+The selected models all tie the output projection to input embeddings; none has a
+separate `output.weight` tensor that can simply be removed. A restricted projection
+still needs a runtime graph change and a measured prefill breakdown.
+
+[SliceGPT](https://arxiv.org/abs/2401.15024) removes rows/columns with structured
+transformations; [LLM-Pruner](https://arxiv.org/abs/2305.11627) studies structural
+pruning and recovery. These are compression/training procedures, not extraction
+of a ready-made decision-only subnetwork. Their results do not establish a gain
+on this corpus or the pinned Vulkan runtime. No structural pruning was shipped.
+The evaluated 4B Q3_K_S variant was slower than Q4_K_M on this GPU and less accurate
+on Score, so smaller storage alone was not a sufficient reason to adopt it.

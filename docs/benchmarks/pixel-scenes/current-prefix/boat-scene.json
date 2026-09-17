@@ -1,0 +1,32 @@
+{
+  "background": "Sky blue",
+  "layers": [
+    {
+      "name": "water",
+      "shape": "rectangle",
+      "color": "Blue",
+      "x": 0,
+      "y": 0.2,
+      "width": 1,
+      "height": 0.8
+    },
+    {
+      "name": "sailboat",
+      "shape": "rectangle",
+      "color": "Brown",
+      "x": 0.3,
+      "y": 0.4,
+      "width": 0.4,
+      "height": 0.2
+    },
+    {
+      "name": "sail",
+      "shape": "triangle",
+      "color": "White",
+      "x": 0.35,
+      "y": 0.3,
+      "width": 0.3,
+      "height": 0.3
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 {
+  "schema_version": 1,
   "repository": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
   "revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
   "file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
@@ -8,5 +9,5 @@
   "license_url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/resolve/cdbee75f17c01a7cc42f958dc650907174af0554/LICENSE",
   "context_size": 4096,
   "gpu_layers": 99,
-  "cpu_supported": true
+  "cpu_supported": false
 }

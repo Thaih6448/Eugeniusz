@@ -82,7 +82,7 @@ eg_question normalize(const eg_question &q) {
 }
 void validate_dataset(const double *logits, const int32_t *labels, int rows, int classes) {
     require(logits && labels && rows > 0, "Dataset must not be empty or null");
-    validate(EG_CHOICE, classes, 1, 0);
+    require(classes >= 2 && classes <= EG_MAX_OPTIONS, "Expected 2 to 26 classes");
     for (int r = 0; r < rows; ++r) {
         require(labels[r] >= 0 && labels[r] < classes, "Label is out of range");
         for (int c = 0; c < classes; ++c) {
@@ -104,7 +104,7 @@ double nll(const double *logits, const int32_t *labels, int rows, int classes, d
 }
 extern "C" {
 uint32_t eg_abi_version(void) { return EG_ABI_VERSION; }
-const char *eg_version(void) { return "0.1.0"; }
+const char *eg_version(void) { return EG_VERSION; }
 const char *eg_last_error(void) { return last_error; }
 eg_question eg_question_default(void) { eg_question q{}; q.temperature = 1; return q; }
 int32_t eg_engine_create(eg_logits_fn backend, void *user, eg_destroy_fn destroy, eg_engine **out) {

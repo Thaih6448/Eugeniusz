@@ -1,0 +1,23 @@
+{
+  "background": "Cream",
+  "layers": [
+    {
+      "name": "tree",
+      "shape": "ellipse",
+      "color": "Green",
+      "x": 0.3,
+      "y": 0.3,
+      "width": 0.4,
+      "height": 0.6
+    },
+    {
+      "name": "trunk",
+      "shape": "rectangle",
+      "color": "Brown",
+      "x": 0.4,
+      "y": 0.7,
+      "width": 0.2,
+      "height": 0.3
+    }
+  ]
+}

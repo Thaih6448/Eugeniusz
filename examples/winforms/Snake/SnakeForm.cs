@@ -17,7 +17,7 @@ public sealed class SnakeForm : SampleForm
 
     public SnakeForm() : base("Model plays Snake")
     {
-        Model.PreferModel("Qwen3-1.7B-Q8_0.gguf");
+        Model.PreferProfile("medium");
         log.ReadOnly = true; log.Font = new Font("Consolas", 9);
         var layout = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 1, RowCount = 5 };
         layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 45)); layout.RowStyles.Add(new RowStyle(SizeType.Absolute, 58));

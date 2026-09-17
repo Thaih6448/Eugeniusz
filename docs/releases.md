@@ -3,15 +3,21 @@
 Three model profiles have one ABI and two deployment classes: GPU for light, medium,
 large, plus CPU for light. `small` is not a fourth profile. Profile defaults and
 immutable weight hashes live in `models/profiles.json`.
+`cpu_supported` describes the supported release matrix, not whether llama.cpp
+can technically load those weights on a CPU. The pixel-art compatibility manifest
+uses the same options and support policy as the large profile.
 
-The optional pixel-art instruction model is pinned separately in
-`models/pixel-profile.json`. It is downloaded on request with
-`scripts/download_pixel_model.py`, and is not silently added to the three release
-profiles or their weight archives. The ready-to-run WinForms apps are published
-separately with `examples/winforms/publish.ps1` and keep weights external.
-The four desktop apps are Decisions, Snake, PixelArt, and Driving. Driving can
-reuse the separately downloaded instruction model; its self-contained EXE lives
-in `dist/winforms/Driving` after publishing.
+The large profile now uses Qwen3-4B-Instruct-2507 Q4_K_M, the same weights
+previously offered as the optional pixel-art model. `download_pixel_model.py`
+remains a compatibility downloader; it reuses the same file. `small` is a CLI
+alias for the canonical `light` profile. See [model quality](model-quality.md)
+for current sizes, measurements, tradeoffs, and the archived previous profiles.
+
+The ready-to-run WinForms apps are published separately with
+`examples/winforms/publish.ps1` and keep weights external. The four desktop apps
+are Decisions, Snake, PixelArt, and Driving. Source checkouts prefer medium for
+Snake, large for PixelArt, and the large instruction model (then medium) for
+Driving; bundles retain their selected profile.
 
 The full planned matrix is:
 

@@ -5,6 +5,38 @@ NVIDIA GeForce RTX 4060 Ti with 16 GB VRAM. The GPU path uses a hash-verified up
 llama.cpp b6500 Vulkan runtime with the locally built adapter. The CPU path is built
 from pinned source with four inference threads. These are not RTX 4060 8 GB measurements.
 
+## Current typed-answer prefix and refreshed profiles
+
+The [300-case API quality report](model-quality.md) contains final GPU runs for all
+three profiles and a full CPU run for small. All 900 final GPU calls and 300 CPU
+calls passed numerical/API invariants; semantic accuracy is reported separately.
+
+Native CTest (2 tests), Python ABI/model checks (4 tests), frozen-corpus/metric tests
+(2 tests), and the installed C++ SDK consumer pass. The complete WinForms solution
+builds with zero warnings/errors; its deterministic rules tests pass, including
+100 generated driving tracks. The .NET console completes ABI and real GPU inference.
+All four self-contained apps were republished. Automated GPU form workflows pass
+for Decisions (4 calls), Snake (7), PixelArt (65), and Driving (17). They exercise
+real inference and rendering, not manual mouse interaction.
+
+With the current large model and prefix, Driving again finished seeds 42, 7, and
+103 without contact: 82, 83, and 81 controller cycles (492 Choice calls), with
+simulation times 24.48, 24.68, and 24.26 seconds. See [current driving results](benchmarks/driving/current-prefix/results.json).
+These remain three diagnostic courses, not a population success-rate estimate.
+
+The current pixel planner/renderer was rerun on all six 8 x 8 examples: 384/384
+pixel decisions agreed with their model-authored scenes. The square and flag retain
+60/64 and 64/64 reference pixels; the other four do not have pixel-exact references.
+See [current pixel results](benchmarks/pixel-scenes/current-prefix/results.json).
+Scene agreement does not prove the scene semantically matches the user's description.
+
+## Historical baseline before the typed-answer/model update
+
+The following 12-case table and pixel/driving experiments below were measured
+with the previous bare-letter answer framing. They are retained as historical
+evidence, not current model-profile measurements. Current 100-case-per-API results
+and explicit limitations are in [model quality](model-quality.md).
+
 | Profile/backend | Median request | Maximum request | Correct / 12 diagnostic cases | Sampled additional device memory |
 | --- | ---: | ---: | ---: | ---: |
 | light / CPU | 217 ms | 239 ms | 10/12 | n/a |
@@ -40,7 +72,7 @@ current primary documentation, but not built inside those editors. A local VS 20
 
 The .NET console startup issue was reproduced as `DllNotFoundException` and fixed
 with native DLL deployment and an explicit resolver. Its ABI check and real light
-GPU inference pass without editing PATH. The three Windows Forms apps compile
+GPU inference pass without editing PATH. The Windows Forms apps compile
 without warnings; automated form workflows exercise Choice/Score/Truth, missing
 model recovery, Snake moves and cancellation, and all 64 pixels of an 8 × 8 image
 with PNG round-trip verification. Rules tests cover relative turns, growth, wall/body
@@ -75,7 +107,7 @@ frozen prompts, palette, seed, and rendering procedure.
 
 The shipped pixel demo now plans a scene once, computes coverage/occlusion in the
 host, then requests a palette choice for every randomly visited pixel. A dedicated
-optional Qwen3-4B-Instruct-2507 Q4_K_M model was tested with the same Vulkan runtime.
+Qwen3-4B-Instruct-2507 Q4_K_M model was tested with the same Vulkan runtime.
 On six authored 8 × 8 cases, the final renderer matched its model-authored scene
 for all 384 pixels. On the two cases with pixel-exact references, the square improved
 from 16/64 to 60/64 and the three-band flag from 46/64 to 64/64, comparing both

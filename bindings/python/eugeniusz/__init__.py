@@ -142,11 +142,16 @@ class Runtime:
         self._check(self.core.eg_conformal_set(values, len(values), quantile, C.byref(mask)))
         return tuple(i for i in range(len(values)) if mask.value & (1 << i))
 
-    def load_model(self, path, context_size=4096, threads=4, gpu_layers=0, system_prompt=None):
-        if not (256 <= context_size <= 131072 and 1 <= threads <= 1024 and 0 <= gpu_layers <= 2147483647):
+    def load_model(self, path, context_size=4096, threads=None, gpu_layers=0, system_prompt=None):
+        if not (256 <= context_size <= 131072 and (threads is None or 1 <= threads <= 1024) and 0 <= gpu_layers <= 2147483647):
             raise ValueError("Invalid model options")
         provider = C.CDLL(str(_library_path(self.directory, "eugeniusz_llama")))
+        provider.eg_llama_options_default.argtypes = []
+        provider.eg_llama_options_default.restype = _Options
+        if threads is None:
+            threads = provider.eg_llama_options_default().threads
         provider.eg_llama_create.argtypes = [C.c_char_p, C.POINTER(_Options), C.POINTER(C.c_void_p), C.c_char_p, C.c_uint32]
+        provider.eg_llama_generate.argtypes = [C.c_void_p, C.c_char_p, C.c_char_p, C.c_uint32, C.c_char_p, C.c_uint32, C.c_char_p, C.c_uint32]
         options = _Options(context_size, threads, gpu_layers)
         handle, error = C.c_void_p(), C.create_string_buffer(1024)
         if system_prompt is None:
@@ -210,7 +215,6 @@ class Engine:
         if not isinstance(max_tokens, int) or not 1 <= max_tokens <= 4096:
             raise ValueError("max_tokens must be in 1..4096")
         function = self._provider.eg_llama_generate
-        function.argtypes = [C.c_void_p, C.c_char_p, C.c_char_p, C.c_uint32, C.c_char_p, C.c_uint32, C.c_char_p, C.c_uint32]
         output, error = C.create_string_buffer(65536), C.create_string_buffer(1024)
         with self._lock:
             if not self._handle:
@@ -218,4 +222,4 @@ class Engine:
             status = function(self._handle, _utf8(system_prompt), _utf8(prompt), max_tokens, output, len(output), error, len(error))
             if status:
                 raise RuntimeError(error.value.decode("utf-8", errors="replace"))
-            return output.value.decode("utf-8")
+            return output.value.decode("utf-8", errors="replace")

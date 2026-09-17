@@ -7,7 +7,7 @@ using UnityEngine;
 // Desktop Unity 6.6 example. Add Engine.cs or Eugeniusz.Managed.dll to the project.
 public sealed class EugeniuszExample : MonoBehaviour
 {
-    public string ModelFile = "Qwen3-0.6B-Q4_0.gguf";
+    public string ModelFile = "Qwen3-0.6B-Q8_0.gguf";
     public bool UseGpu = true;
     private bool stopped;
 

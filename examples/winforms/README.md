@@ -4,6 +4,9 @@ Four Windows x64 / .NET 8 desktop applications use the real local native model.
 All code, prompts and UI text are in English. CPU is the safe default; select GPU
 when using a Vulkan/CUDA native runtime. A model stays loaded between decisions.
 
+Watch the [Driving, Snake, and PixelArt demo GIFs](../../README.md#demos) in the
+repository overview. Playback speeds are labeled beside each recording.
+
 | Application | Behavior |
 | --- | --- |
 | **Decisions** | Enter a state and prompt, choose Choice / Score / Truth, inspect the typed answer and the full probability distribution. Choice options and score levels are editable. |
@@ -29,7 +32,7 @@ dotnet run --project examples/winforms/Driving -c Release
 
 # Optional model/backend selection at startup:
 ./examples/winforms/run.ps1 Snake -Gpu
-./examples/winforms/run.ps1 PixelArt -Model C:/Models/Qwen3-4B-Q4_K_M.gguf -Gpu
+./examples/winforms/run.ps1 PixelArt -Model C:/Models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf -Gpu
 ```
 
 `examples/Directory.Build.targets` copies the native DLLs into every sample's output
@@ -44,14 +47,15 @@ the EXE. It also discovers installed runtimes in the source checkout. It registe
 the dependency directory explicitly: manual PATH edits are not required.
 
 The model picker discovers the light model in the source tree or a `profile.json`
-in a release bundle. In source checkouts, Snake prefers the downloaded medium model
-and PixelArt prefers the optional pixel instruction model, then large, when those
+in a release bundle. Source discovery reads the current `models/profiles.json`.
+In source checkouts, Snake prefers the downloaded medium model
+and PixelArt prefers the large instruction model when those
 files exist. `EUGENIUSZ_MODEL`, `--model`, or **Browse model** can choose another
 file. No application downloads a model silently. Missing native files/model paths
 are displayed as actionable errors; they do not terminate the GUI.
-Driving prefers the downloaded Qwen3-4B-Instruct-2507 model, then medium. The
-optional instruction model can be obtained with `python scripts/download_pixel_model.py`;
-its filename reflects the earlier pixel demo, but the same model handles driving.
+Driving prefers the downloaded Qwen3-4B-Instruct-2507 model, then medium. Download
+it with `python scripts/download_model.py large`. The older pixel-model downloader
+obtains the same file. Existing downloaded weights are reused.
 
 ## Decision playground
 
@@ -144,17 +148,18 @@ no post-hoc replacement of a disagreeing answer. The plan itself is model-author
 the host performs rasterization math. Copying previously painted neighbors was less
 reliable in experiments because it could spread an earlier mistake.
 
-For this demo, download the optional instruction model once:
+For this demo, download the large instruction model once:
 
 ```powershell
-python scripts/download_pixel_model.py
+python scripts/download_model.py large
 ```
 
 This fetches a hash-pinned Qwen3-4B-Instruct-2507 Q4_K_M GGUF (about 2.5 GB) and its
 license. It uses the same native runtime and supports CPU or GPU. Source checkouts
 prefer it automatically when present. In a release bundle, select it with Browse
-or `--model` to override the bundle's existing profile. The light/medium/large
-release profiles remain unchanged. No GUI download happens automatically.
+or `--model` to override a light/medium bundle. This file is now the large release
+profile; the earlier `download_pixel_model.py` command remains compatible. No GUI
+download happens automatically.
 
 This produces simple geometric illustrations rather than diffusion-model images.
 Composition, proportions, and interpretation can still be wrong. Scene validation

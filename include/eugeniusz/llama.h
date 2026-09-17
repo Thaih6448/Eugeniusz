@@ -21,7 +21,7 @@ typedef struct eg_llama_options {
     int32_t gpu_layers; /* 0 = CPU, positive = requested offloaded layers. */
 } eg_llama_options;
 EG_LLAMA_API eg_llama_options eg_llama_options_default(void);
-/* Supports Qwen3 chat GGUF models only in v0.1; no model downloads at runtime.
+/* Supports dense Qwen2/Qwen3 and SmolLM2 ChatML GGUF models; no model downloads at runtime.
  * Error buffer is caller-owned. Release the returned engine with eg_engine_destroy. */
 EG_LLAMA_API int32_t eg_llama_create(const char *model_path, const eg_llama_options *options,
                                     eg_engine **out, char *error_buffer, uint32_t error_capacity);
