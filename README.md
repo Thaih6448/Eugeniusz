@@ -75,6 +75,14 @@ predate the latest model/prompt update; see the [current measurements](docs/mode
 The [demo guide](examples/winforms/README.md) includes a fourth app for trying
 Choice, Score, and Truth with your own prompts.
 
+### Eugeniusz in action — video demo
+
+Watch another example of Eugeniusz in use. Click the preview to watch on YouTube.
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=Y2bDkS4qMS4"><img src="https://img.youtube.com/vi/Y2bDkS4qMS4/hqdefault.jpg" alt="Watch another Eugeniusz usage example on YouTube" width="840"></a>
+</p>
+
 ## Three release profiles
 
 | Profile | Pinned model | Weight size | Default context | Release backends |
