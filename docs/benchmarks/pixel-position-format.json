@@ -1,0 +1,1576 @@
+{
+  "model": "Qwen3-4B-Q4_K_M.gguf",
+  "gpu_layers": 99,
+  "size": 8,
+  "note": "Two authored geometric cases; not a general image-quality benchmark. Frozen prompt snapshots of the format change.",
+  "results": [
+    {
+      "case": "centered_square",
+      "format": "normalized",
+      "description": "Choose red if BOTH normalized x and y are between 0.25 and 0.75 inclusive; otherwise choose sky blue. This draws a red square on a sky blue background.",
+      "correct": 43,
+      "pixels": [
+        {
+          "x": 0,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 7,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 0,
+          "y": 5,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 0,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 2,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 3,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 0,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 2,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 3,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 4,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 7,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        }
+      ]
+    },
+    {
+      "case": "centered_square",
+      "format": "percent",
+      "description": "Choose red if BOTH top and left are between 25% and 75% inclusive; otherwise choose sky blue. This draws a red square on a sky blue background.",
+      "correct": 56,
+      "pixels": [
+        {
+          "x": 0,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 7,
+          "y": 0,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "expected": "Sky blue",
+          "actual": "Red"
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "expected": "Red",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "expected": "Red",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "expected": "Red",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 0,
+          "y": 5,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "expected": "Red",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "expected": "Red",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "expected": "Red",
+          "actual": "Red"
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 0,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 2,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 3,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 0,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 1,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 2,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 3,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 4,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        },
+        {
+          "x": 7,
+          "y": 7,
+          "expected": "Sky blue",
+          "actual": "Sky blue"
+        }
+      ]
+    },
+    {
+      "case": "upper_right",
+      "format": "normalized",
+      "description": "Choose yellow if normalized y is below 0.5 AND normalized x is above 0.5; otherwise choose blue.",
+      "correct": 16,
+      "pixels": [
+        {
+          "x": 0,
+          "y": 0,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 0,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 0,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 0,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 0,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        }
+      ]
+    },
+    {
+      "case": "upper_right",
+      "format": "percent",
+      "description": "Choose yellow if top is below 50% AND left is above 50%; otherwise choose blue.",
+      "correct": 16,
+      "pixels": [
+        {
+          "x": 0,
+          "y": 0,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 0,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "expected": "Yellow",
+          "actual": "Yellow"
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 0,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 0,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 0,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 1,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 2,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 3,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 4,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        },
+        {
+          "x": 7,
+          "y": 7,
+          "expected": "Blue",
+          "actual": "Yellow"
+        }
+      ]
+    }
+  ]
+}

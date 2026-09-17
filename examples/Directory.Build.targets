@@ -1,0 +1,12 @@
+<Project>
+  <!-- Deploy native dependencies with every .NET sample, including published apps. -->
+  <PropertyGroup>
+    <EugeniuszNativeDir Condition="'$(EugeniuszNativeDir)' == '' and Exists('$(MSBuildThisFileDirectory)../build/install-vulkan/bin/eugeniusz.dll')">$(MSBuildThisFileDirectory)../build/install-vulkan/bin</EugeniuszNativeDir>
+    <EugeniuszNativeDir Condition="'$(EugeniuszNativeDir)' == '' and Exists('$(MSBuildThisFileDirectory)../build/install-cpu/bin/eugeniusz.dll')">$(MSBuildThisFileDirectory)../build/install-cpu/bin</EugeniuszNativeDir>
+    <EugeniuszNativeDir Condition="'$(EugeniuszNativeDir)' == '' and Exists('$(MSBuildThisFileDirectory)../build/install/bin/eugeniusz.dll')">$(MSBuildThisFileDirectory)../build/install/bin</EugeniuszNativeDir>
+    <EugeniuszNativeDir Condition="'$(EugeniuszNativeDir)' == '' and Exists('$(MSBuildThisFileDirectory)../bin/eugeniusz.dll')">$(MSBuildThisFileDirectory)../bin</EugeniuszNativeDir>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(EugeniuszNativeDir)' != ''">
+    <Content Include="$(EugeniuszNativeDir)/*.dll" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

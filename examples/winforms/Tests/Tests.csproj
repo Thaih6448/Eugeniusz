@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../Snake/SnakeGame.cs" Link="SnakeGame.cs" />
+    <Compile Include="../PixelArt/PixelPlan.cs" Link="PixelPlan.cs" />
+    <Compile Include="../PixelArt/PixelScene.cs" Link="PixelScene.cs" />
+    <Compile Include="../Driving/DrivingGame.cs" Link="DrivingGame.cs" />
+  </ItemGroup>
+</Project>

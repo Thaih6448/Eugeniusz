@@ -1,0 +1,2637 @@
+[
+  {
+    "decision": 1,
+    "time": 0,
+    "speed": 0,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 93.35598401464692
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 141.02504567650246
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 96.46269403709248
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999998929171982,
+    "pedalConfidence": 0.999999828226205,
+    "milliseconds": 8321.020700000001
+  },
+  {
+    "decision": 2,
+    "time": 0.3000000000000002,
+    "speed": 6.0000000000000036,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 93.81774044398644
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 142.40222320192964
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 228.9027332993572
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 95.83756428648168
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999998271002096,
+    "pedalConfidence": 0.9999983578876146,
+    "milliseconds": 135.1457
+  },
+  {
+    "decision": 3,
+    "time": 0.5999999999999998,
+    "speed": 12.000000000000018,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 95.3457795208676
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 146.85882863573303
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 204.2903503945421
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 94.03852918739497
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999993816731574,
+    "pedalConfidence": 0.9999999770300504,
+    "milliseconds": 135.2175
+  },
+  {
+    "decision": 4,
+    "time": 0.8999999999999978,
+    "speed": 18.000000000000007,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 98.07711268784917
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 103.66462125138484
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 175.9860835623436
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 91.1860767373037
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999994554443595,
+    "pedalConfidence": 0.9999999725422165,
+    "milliseconds": 134.37740000000002
+  },
+  {
+    "decision": 5,
+    "time": 1.1999999999999988,
+    "speed": 23.99999999999995,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 102.67261767096848
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 97.88990402910224
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 149.57830812059785
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 87.43397700758238
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999998193167146,
+    "pedalConfidence": 0.9999999649003185,
+    "milliseconds": 135.6958
+  },
+  {
+    "decision": 6,
+    "time": 1.5000000000000013,
+    "speed": 29.999999999999893,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 110.25058329665218
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 143.19382233442502
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 126.28575470693386
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 82.91928882920985
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999973435767,
+    "pedalConfidence": 0.999993440865249,
+    "milliseconds": 134.1849
+  },
+  {
+    "decision": 7,
+    "time": 1.8000000000000038,
+    "speed": 35.99999999999984,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 111.35662685280431
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 133.7203142996112
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 125.53712705484665
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 80.90014534606215
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999994179822,
+    "pedalConfidence": 0.7387441555824488,
+    "milliseconds": 134.22050000000002
+  },
+  {
+    "decision": 8,
+    "time": 2.100000000000003,
+    "speed": 41.99999999999978,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 112.41483313183373
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 124.34495041741064
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 124.65269393299305
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 79.04360404701733
+      }
+    ],
+    "action": "Brake and go STRAIGHT",
+    "steeringConfidence": 0.9999999949984333,
+    "pedalConfidence": 0.9999992879584895,
+    "milliseconds": 134.08460000000002
+  },
+  {
+    "decision": 9,
+    "time": 2.399999999999997,
+    "speed": 29.99999999999987,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 69.73779708193914
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 117.74156551365039
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 123.9394036532282
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 77.34028976497616
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999988383421,
+    "pedalConfidence": 0.9999996012269181,
+    "milliseconds": 134.5266
+  },
+  {
+    "decision": 10,
+    "time": 2.6999999999999904,
+    "speed": 35.999999999999815,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 63.918961770088266
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 114.7624003077551
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 123.98884949215922
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 75.9076019091282
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999997106417,
+    "pedalConfidence": 0.8596789136786395,
+    "milliseconds": 133.52190000000002
+  },
+  {
+    "decision": 11,
+    "time": 2.999999999999984,
+    "speed": 41.99999999999976,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 113.62741788611956
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 188.093896854856
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 124.04726509778975
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 74.73196203238663
+      }
+    ],
+    "action": "Brake and steer LEFT",
+    "steeringConfidence": 0.9999996541846622,
+    "pedalConfidence": 0.9999992188392726,
+    "milliseconds": 135.9562
+  },
+  {
+    "decision": 12,
+    "time": 3.2999999999999776,
+    "speed": 29.999999999999847,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 105.9265028433581
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 93.76168296005555
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 168.4160867389398
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 80.05316779891906
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999997769674669,
+    "pedalConfidence": 0.9999999601200813,
+    "milliseconds": 135.10399999999998
+  },
+  {
+    "decision": 13,
+    "time": 3.5999999999999712,
+    "speed": 35.999999999999794,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 111.36921272909298
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 180.47299750206912
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 130.40708914624932
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 74.76251462778532
+      }
+    ],
+    "action": "Coast and steer LEFT",
+    "steeringConfidence": 0.9999996920965586,
+    "pedalConfidence": 0.6247703007350494,
+    "milliseconds": 135.2146
+  },
+  {
+    "decision": 14,
+    "time": 3.899999999999965,
+    "speed": 35.39999999999977,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 103.88854567468098
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 151.20149889562936
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 182.00433933188665
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 81.35961804516023
+      }
+    ],
+    "action": "Coast and go STRAIGHT",
+    "steeringConfidence": 0.9999999992744313,
+    "pedalConfidence": 0.6951569790471893,
+    "milliseconds": 133.1954
+  },
+  {
+    "decision": 15,
+    "time": 4.19999999999997,
+    "speed": 34.79999999999975,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 74.39904577674262
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 147.97291291335122
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 188.8773652213355
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 83.0324842148542
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999995886883,
+    "pedalConfidence": 0.666376343224012,
+    "milliseconds": 135.9492
+  },
+  {
+    "decision": 16,
+    "time": 4.499999999999981,
+    "speed": 40.79999999999969,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 60.926484973209305
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 144.48833090640431
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 128.2070911820373
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 85.03033841859285
+      }
+    ],
+    "action": "Brake and go STRAIGHT",
+    "steeringConfidence": 0.9999999980226186,
+    "pedalConfidence": 0.9999993153041219,
+    "milliseconds": 136.33780000000002
+  },
+  {
+    "decision": 17,
+    "time": 4.799999999999993,
+    "speed": 28.799999999999766,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 55.22036486996213
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 141.30110292653595
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 116.33095504545497
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 86.91794685235108
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999985554813,
+    "pedalConfidence": 0.9999991460639899,
+    "milliseconds": 135.4072
+  },
+  {
+    "decision": 18,
+    "time": 5.100000000000004,
+    "speed": 34.79999999999971,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 54.5381227971585
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 138.3739617355021
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 107.56719631394665
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 89.05334880762015
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999996862996,
+    "pedalConfidence": 0.6388334969433633,
+    "milliseconds": 136.27339999999998
+  },
+  {
+    "decision": 19,
+    "time": 5.4000000000000155,
+    "speed": 40.799999999999656,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 94.35693573559439
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 134.89582926145005
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 99.51310034507368
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 91.59070877799873
+      }
+    ],
+    "action": "Brake and steer LEFT",
+    "steeringConfidence": 0.9999996101241616,
+    "pedalConfidence": 0.9999984755494797,
+    "milliseconds": 136.2702
+  },
+  {
+    "decision": 20,
+    "time": 5.700000000000027,
+    "speed": 28.79999999999973,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 88.52028035579497
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 115.73036975441065
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 156.17002645275167
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 182.95780074683
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 107.24670539256944
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999998520473895,
+    "pedalConfidence": 0.9999999677344115,
+    "milliseconds": 136.83980000000003
+  },
+  {
+    "decision": 21,
+    "time": 6.000000000000038,
+    "speed": 34.79999999999968,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 88.6711789859263
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 125.54853389310551
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 99.05007478116399
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999996471138479,
+    "pedalConfidence": 0.5723381228501804,
+    "milliseconds": 136.32260000000002
+  },
+  {
+    "decision": 22,
+    "time": 6.30000000000005,
+    "speed": 40.79999999999962,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 91.7475159343436
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 146.85434999746133
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 81.10379152116442
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 91.0453104597455
+      }
+    ],
+    "action": "Brake and steer LEFT",
+    "steeringConfidence": 0.9999998100832667,
+    "pedalConfidence": 0.9999991336876379,
+    "milliseconds": 136.2383
+  },
+  {
+    "decision": 23,
+    "time": 6.600000000000061,
+    "speed": 28.799999999999695,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 85.75770732308247
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 122.74082670707645
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 155.4479773562381
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 102.07723837359876
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999959854569,
+    "pedalConfidence": 0.9999975408230581,
+    "milliseconds": 133.2554
+  },
+  {
+    "decision": 24,
+    "time": 6.900000000000072,
+    "speed": 34.79999999999964,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 83.71497925791685
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 119.96380832147146
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 145.82390036197364
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 61.73222165157631
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999996038953,
+    "pedalConfidence": 0.6358771520133368,
+    "milliseconds": 132.94580000000002
+  },
+  {
+    "decision": 25,
+    "time": 7.200000000000084,
+    "speed": 40.799999999999585,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 81.28919192993051
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 116.73806558526344
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 136.71055468679796
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 55.58339636182365
+      }
+    ],
+    "action": "Brake and go STRAIGHT",
+    "steeringConfidence": 0.9999999896135158,
+    "pedalConfidence": 0.9999989021386482,
+    "milliseconds": 133.4059
+  },
+  {
+    "decision": 26,
+    "time": 7.500000000000095,
+    "speed": 28.79999999999966,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 79.07365980630117
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 114.01026238903611
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 131.07654562020628
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 61.978458649564374
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999964506883,
+    "pedalConfidence": 0.999999250353399,
+    "milliseconds": 133.73590000000002
+  },
+  {
+    "decision": 27,
+    "time": 7.800000000000106,
+    "speed": 34.799999999999606,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 77.03556207352533
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 111.50091962194399
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 167.7002615638898
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 113.16478673851383
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999999200948952,
+    "pedalConfidence": 0.5814061385768576,
+    "milliseconds": 134.652
+  },
+  {
+    "decision": 28,
+    "time": 8.100000000000117,
+    "speed": 40.79999999999955,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 79.84579352250836
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 70.47377691384904
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 110.2871830920353
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 103.76143385500285
+      }
+    ],
+    "action": "Brake and steer RIGHT",
+    "steeringConfidence": 0.9999998884137171,
+    "pedalConfidence": 0.9999985575798744,
+    "milliseconds": 133.97469999999998
+  },
+  {
+    "decision": 29,
+    "time": 8.400000000000128,
+    "speed": 28.799999999999624,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 85.95373342464916
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 101.63487449992012
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 102.38913385805597
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 96.58392254756374
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999989412929,
+    "pedalConfidence": 0.9999998403695511,
+    "milliseconds": 133.7249
+  },
+  {
+    "decision": 30,
+    "time": 8.70000000000014,
+    "speed": 34.79999999999957,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 86.9964999312793
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 93.0013020037105
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 92.54595358927786
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 96.00746430711817
+      }
+    ],
+    "action": "Coast and go STRAIGHT",
+    "steeringConfidence": 0.9999999998689251,
+    "pedalConfidence": 0.5268952717932378,
+    "milliseconds": 132.3218
+  },
+  {
+    "decision": 31,
+    "time": 9.000000000000151,
+    "speed": 34.19999999999955,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 49.80235250516287
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 85.15293627492628
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 83.932199329601
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 95.31545057929011
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999996593467,
+    "pedalConfidence": 0.9888198795360681,
+    "milliseconds": 134.20940000000002
+  },
+  {
+    "decision": 32,
+    "time": 9.300000000000162,
+    "speed": 40.19999999999949,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 43.69180209938104
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 78.87701719610509
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 77.31116413542664
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 94.49462994405523
+      }
+    ],
+    "action": "Brake and go STRAIGHT",
+    "steeringConfidence": 0.9999999970724176,
+    "pedalConfidence": 0.999999428581977,
+    "milliseconds": 133.1825
+  },
+  {
+    "decision": 33,
+    "time": 9.600000000000174,
+    "speed": 28.19999999999956,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 47.704754597523326
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 78.07997227844457
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 144.63379418673782
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 93.74482598349894
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999997943468094,
+    "pedalConfidence": 0.9999999902978981,
+    "milliseconds": 134.8379
+  },
+  {
+    "decision": 34,
+    "time": 9.900000000000185,
+    "speed": 34.199999999999505,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 63.23757516043924
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 167.0027695633573
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 63.259871138482005
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 88.1931828483792
+      }
+    ],
+    "action": "Accelerate and steer LEFT",
+    "steeringConfidence": 0.9999984671116134,
+    "pedalConfidence": 0.9878627060697021,
+    "milliseconds": 134.61599999999999
+  },
+  {
+    "decision": 35,
+    "time": 10.200000000000196,
+    "speed": 40.19999999999945,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 56.41209024081792
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 152.563593045481
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 89.7438557533841
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 53.43904314146398
+      }
+    ],
+    "action": "Brake and steer LEFT",
+    "steeringConfidence": 0.999997529896839,
+    "pedalConfidence": 0.9999991611856114,
+    "milliseconds": 134.28730000000002
+  },
+  {
+    "decision": 36,
+    "time": 10.500000000000208,
+    "speed": 28.199999999999516,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 49.67028513636455
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 173.6020779535077
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 85.55668186659173
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 48.15275494725999
+      }
+    ],
+    "action": "Accelerate and steer LEFT",
+    "steeringConfidence": 0.9999991946905208,
+    "pedalConfidence": 0.9999999952295433,
+    "milliseconds": 133.3474
+  },
+  {
+    "decision": 37,
+    "time": 10.80000000000022,
+    "speed": 34.19999999999946,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 43.251200538045936
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 136.42564294628886
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 186.87871227636828
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 106.33243949551917
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.999999857896632,
+    "pedalConfidence": 0.8260298007080135,
+    "milliseconds": 134.3141
+  },
+  {
+    "decision": 38,
+    "time": 11.10000000000023,
+    "speed": 40.199999999999406,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 37.999932573168884
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 124.97233456539456
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 154.86080661570475
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 98.19342905789789
+      }
+    ],
+    "action": "Brake and go STRAIGHT",
+    "steeringConfidence": 0.9999999983536367,
+    "pedalConfidence": 0.9999996522734552,
+    "milliseconds": 134.8496
+  },
+  {
+    "decision": 39,
+    "time": 11.400000000000242,
+    "speed": 28.199999999999473,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 89.26871043493472
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 114.8611836354601
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 152.35401480008713
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 63.25037446677317
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999992852732132,
+    "pedalConfidence": 0.9999999724863552,
+    "milliseconds": 134.1765
+  },
+  {
+    "decision": 40,
+    "time": 11.700000000000253,
+    "speed": 34.19999999999942,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 99.54970477209568
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 119.37698928591998
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 131.88737344633793
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 56.95212141240477
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.999999999389219,
+    "pedalConfidence": 0.9105491096431562,
+    "milliseconds": 134.1874
+  },
+  {
+    "decision": 41,
+    "time": 12.000000000000265,
+    "speed": 40.19999999999936,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 103.70797812665552
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 157.29715351083087
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 127.75174919694838
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 46.5671110735328
+      }
+    ],
+    "action": "Brake and go STRAIGHT",
+    "steeringConfidence": 0.99999998990792,
+    "pedalConfidence": 0.9999994564173732,
+    "milliseconds": 134.6345
+  },
+  {
+    "decision": 42,
+    "time": 12.300000000000276,
+    "speed": 28.19999999999943,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 107.51475853882131
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 157.73145872399027
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 123.97393549629888
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 43.224553349109584
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999970900519,
+    "pedalConfidence": 0.9999950089705811,
+    "milliseconds": 135.4382
+  },
+  {
+    "decision": 43,
+    "time": 12.600000000000287,
+    "speed": 34.19999999999938,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 111.7073406137036
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 230
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 120.1557704322711
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 86.78780786218412
+      }
+    ],
+    "action": "Accelerate and steer LEFT",
+    "steeringConfidence": 0.9999998565803597,
+    "pedalConfidence": 0.6154860572421765,
+    "milliseconds": 134.7177
+  },
+  {
+    "decision": 44,
+    "time": 12.900000000000299,
+    "speed": 40.19999999999932,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 101.66217923720349
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 129.50785432807038
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 132.4702994750696
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 89.78593483885831
+      }
+    ],
+    "action": "Brake and go STRAIGHT",
+    "steeringConfidence": 0.9999999978341299,
+    "pedalConfidence": 0.9999992048958781,
+    "milliseconds": 135.2163
+  },
+  {
+    "decision": 45,
+    "time": 13.20000000000031,
+    "speed": 28.199999999999388,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 76.17834086298909
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 124.47444993476742
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 128.82169837435498
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 88.64873935792896
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.999999997712667,
+    "pedalConfidence": 0.9999994195910689,
+    "milliseconds": 136.84640000000002
+  },
+  {
+    "decision": 46,
+    "time": 13.500000000000322,
+    "speed": 34.199999999999335,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 65.3195259951057
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 126.87902660743569
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 125.47045022678233
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 87.30063366813518
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999996556843,
+    "pedalConfidence": 0.980355927498663,
+    "milliseconds": 136.4981
+  },
+  {
+    "decision": 47,
+    "time": 13.800000000000333,
+    "speed": 40.19999999999928,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 58.93984130139833
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 184.14797127571498
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 121.47627677511893
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 85.69389858941207
+      }
+    ],
+    "action": "Brake and steer LEFT",
+    "steeringConfidence": 0.9999987148661151,
+    "pedalConfidence": 0.9999992667291914,
+    "milliseconds": 136.5793
+  },
+  {
+    "decision": 48,
+    "time": 14.100000000000344,
+    "speed": 28.199999999999346,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 54.2028117524102
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 101.79424355947683
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 77.35283819840394
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 89.02191134288987
+      }
+    ],
+    "action": "Accelerate and steer LEFT",
+    "steeringConfidence": 0.9999992326758927,
+    "pedalConfidence": 0.9999999959249728,
+    "milliseconds": 136.8048
+  },
+  {
+    "decision": 49,
+    "time": 14.400000000000356,
+    "speed": 34.19999999999929,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 49.97149665868254
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 88.90955921100348
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 150.0326544281304
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 94.13418911882388
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999999291829668,
+    "pedalConfidence": 0.9835320861515834,
+    "milliseconds": 136.49130000000002
+  },
+  {
+    "decision": 50,
+    "time": 14.700000000000367,
+    "speed": 40.199999999999235,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 105.43040737887978
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 154.06390445308273
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 125.80165408571902
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 87.42612520004862
+      }
+    ],
+    "action": "Brake and go STRAIGHT",
+    "steeringConfidence": 0.9999999949411502,
+    "pedalConfidence": 0.9999992728561342,
+    "milliseconds": 136.6457
+  },
+  {
+    "decision": 51,
+    "time": 15.000000000000378,
+    "speed": 28.199999999999303,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 79.95216613390949
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 148.18161691121696
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 228.19294802662336
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 122.07125490248416
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 85.75147217195914
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999992182436,
+    "pedalConfidence": 0.9999994263775773,
+    "milliseconds": 135.48489999999998
+  },
+  {
+    "decision": 52,
+    "time": 15.30000000000039,
+    "speed": 34.19999999999925,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 67.7923579397725
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 145.73733277303495
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 218.8104480266241
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 118.64487503594462
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 49.512551088889204
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999995596627,
+    "pedalConfidence": 0.9862124027195222,
+    "milliseconds": 133.90120000000002
+  },
+  {
+    "decision": 53,
+    "time": 15.600000000000401,
+    "speed": 40.19999999999919,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 60.75025428236769
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 230
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 207.62794802662478
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 114.53341937659333
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 42.29295799443152
+      }
+    ],
+    "action": "Brake and steer LEFT",
+    "steeringConfidence": 0.9999994731455999,
+    "pedalConfidence": 0.9999990029840093,
+    "milliseconds": 134.5873
+  },
+  {
+    "decision": 54,
+    "time": 15.900000000000412,
+    "speed": 28.19999999999926,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 55.84021578038569
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 122.1988132244291
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 198.3871152185709
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 126.11705680141381
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 84.6387681325624
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999981619274,
+    "pedalConfidence": 0.9999997248003205,
+    "milliseconds": 134.2269
+  },
+  {
+    "decision": 55,
+    "time": 16.200000000000422,
+    "speed": 34.19999999999921,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 54.18183450525466
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 118.34189458643601
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 189.00461521857204
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 123.22674835672842
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 83.69162989349893
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999996671123,
+    "pedalConfidence": 0.98791714331081,
+    "milliseconds": 134.44920000000002
+  },
+  {
+    "decision": 56,
+    "time": 16.500000000000433,
+    "speed": 40.19999999999915,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 108.6489801286062
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 230
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 177.82211521857053
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 119.6699929805767
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 82.00816103154837
+      }
+    ],
+    "action": "Brake and steer LEFT",
+    "steeringConfidence": 0.9999999151767754,
+    "pedalConfidence": 0.9999994616381268,
+    "milliseconds": 135.1375
+  },
+  {
+    "decision": 57,
+    "time": 16.800000000000445,
+    "speed": 28.199999999999218,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 100.8820255193735
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 98.3198237428817
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 135.7914244406155
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 85.88857068662963
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999997900703473,
+    "pedalConfidence": 0.999999986407125,
+    "milliseconds": 134.4632
+  },
+  {
+    "decision": 58,
+    "time": 17.100000000000456,
+    "speed": 34.199999999999164,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 110.18796430850864
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 230
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 116.4923692074438
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 80.69471087911455
+      }
+    ],
+    "action": "Accelerate and steer LEFT",
+    "steeringConfidence": 0.9999997823511778,
+    "pedalConfidence": 0.606095061900206,
+    "milliseconds": 134.63
+  },
+  {
+    "decision": 59,
+    "time": 17.400000000000468,
+    "speed": 40.19999999999911,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 101.40972912946367
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 194.59384479814358
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 133.85163460384402
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 84.24747570070056
+      }
+    ],
+    "action": "Brake and steer LEFT",
+    "steeringConfidence": 0.9999997494853746,
+    "pedalConfidence": 0.9999991907485472,
+    "milliseconds": 133.9198
+  },
+  {
+    "decision": 60,
+    "time": 17.70000000000048,
+    "speed": 28.199999999999175,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 94.62970354299217
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 77.50975345637852
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 160.78951962361162
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 90.32289668757997
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999998638953987,
+    "pedalConfidence": 0.9999999908198544,
+    "milliseconds": 133.6377
+  },
+  {
+    "decision": 61,
+    "time": 18.00000000000049,
+    "speed": 34.19999999999912,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 71.48121360755226
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 192.45104814545013
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 134.19020985874226
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 84.70923546206141
+      }
+    ],
+    "action": "Accelerate and steer LEFT",
+    "steeringConfidence": 0.9999988392893963,
+    "pedalConfidence": 0.7683830491575753,
+    "milliseconds": 134.4021
+  },
+  {
+    "decision": 62,
+    "time": 18.3000000000005,
+    "speed": 40.199999999999065,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 64.938551022443
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 150.75260364438228
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 113.34274943233481
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 91.36662706074597
+      }
+    ],
+    "action": "Brake and steer LEFT",
+    "steeringConfidence": 0.9999996367823394,
+    "pedalConfidence": 0.9999983591855957,
+    "milliseconds": 135.4588
+  },
+  {
+    "decision": 63,
+    "time": 18.600000000000513,
+    "speed": 28.199999999999132,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 57.64066237819353
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 125.75104368409909
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 107.07469991996032
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 101.21931243302222
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.999999997833986,
+    "pedalConfidence": 0.9999993193823479,
+    "milliseconds": 134.4409
+  },
+  {
+    "decision": 64,
+    "time": 18.900000000000524,
+    "speed": 34.19999999999908,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 46.180618915568616
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 123.305343883243
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 103.08871172124033
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999998369442186,
+    "pedalConfidence": 0.7359590258370451,
+    "milliseconds": 135.3958
+  },
+  {
+    "decision": 65,
+    "time": 19.200000000000536,
+    "speed": 40.19999999999902,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 41.89046194512491
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 146.99448237409635
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 87.69449274923369
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 95.05189755576576
+      }
+    ],
+    "action": "Brake and steer LEFT",
+    "steeringConfidence": 0.9999992453457343,
+    "pedalConfidence": 0.999999515808784,
+    "milliseconds": 133.4105
+  },
+  {
+    "decision": 66,
+    "time": 19.500000000000547,
+    "speed": 28.19999999999909,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 39.70828199278898
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 122.04427173869958
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 104.50714068899353
+      }
+    ],
+    "action": "Accelerate and steer RIGHT",
+    "steeringConfidence": 0.9999998315073715,
+    "pedalConfidence": 0.9999999870826886,
+    "milliseconds": 134.30259999999998
+  },
+  {
+    "decision": 67,
+    "time": 19.80000000000056,
+    "speed": 34.19999999999904,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 85.10681139345493
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 141.45468641451865
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 230
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 180.97452749240148
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 97.61727502659387
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999993071607,
+    "pedalConfidence": 0.9864519397925592,
+    "milliseconds": 133.23970000000003
+  },
+  {
+    "decision": 68,
+    "time": 20.10000000000057,
+    "speed": 40.19999999999898,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 84.54901992870855
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 140.743172143089
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 225.44761562271458
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 183.79911753065997
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 98.05896953366707
+      }
+    ],
+    "action": "Brake and steer RIGHT",
+    "steeringConfidence": 0.9999981514239895,
+    "pedalConfidence": 0.9999991622162048,
+    "milliseconds": 134.15460000000002
+  },
+  {
+    "decision": 69,
+    "time": 20.40000000000058,
+    "speed": 28.199999999999047,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 91.2015535471084
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 174.43076695409894
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 208.44797066692732
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 146.79658843700835
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 91.50921582174907
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999990302351,
+    "pedalConfidence": 0.9999994917089955,
+    "milliseconds": 134.0358
+  },
+  {
+    "decision": 70,
+    "time": 20.700000000000593,
+    "speed": 34.199999999998994,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 92.20563216424267
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 175.49743260309208
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 199.0654706669276
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 146.0778330123404
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 52.05145731651494
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999993152859,
+    "pedalConfidence": 0.8388855551147909,
+    "milliseconds": 133.5933
+  },
+  {
+    "decision": 71,
+    "time": 21.000000000000604,
+    "speed": 40.19999999999894,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 93.4023397726737
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 176.11754274849775
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 187.88297066692797
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 145.69497818879725
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 44.86530332715296
+      }
+    ],
+    "action": "Brake and go STRAIGHT",
+    "steeringConfidence": 0.9999999922537312,
+    "pedalConfidence": 0.9999995284156692,
+    "milliseconds": 133.8043
+  },
+  {
+    "decision": 72,
+    "time": 21.300000000000615,
+    "speed": 28.199999999999005,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 94.49143122803478
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 176.48931974599583
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 177.6679706669283
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 145.34524762564132
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 45.024575286829595
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999929380219,
+    "pedalConfidence": 0.9999982118520592,
+    "milliseconds": 134.1439
+  },
+  {
+    "decision": 73,
+    "time": 21.600000000000627,
+    "speed": 34.19999999999895,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 95.48940567637543
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 176.83079773708997
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 168.28547066692857
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 145.20260629042076
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 87.81991118556871
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999989635038,
+    "pedalConfidence": 0.9846045443800617,
+    "milliseconds": 134.6433
+  },
+  {
+    "decision": 74,
+    "time": 21.900000000000638,
+    "speed": 40.199999999998894,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 96.67883805245528
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 176.42216880193067
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 157.10297066692894
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 145.8103220863915
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 86.88851566342572
+      }
+    ],
+    "action": "Brake and go STRAIGHT",
+    "steeringConfidence": 0.9999999881115512,
+    "pedalConfidence": 0.9999997679545908,
+    "milliseconds": 135.9252
+  },
+  {
+    "decision": 75,
+    "time": 22.20000000000065,
+    "speed": 28.199999999998962,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 97.64859382734988
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 175.91479088284277
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 146.88797066692928
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 146.36545884971298
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 86.09872155172982
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999916902954,
+    "pedalConfidence": 0.999998581025461,
+    "milliseconds": 136.5812
+  },
+  {
+    "decision": 76,
+    "time": 22.50000000000066,
+    "speed": 34.19999999999891,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 98.50106962694619
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 175.44876314658808
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 137.50547066692954
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 142.77170235891785
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 85.55434447235058
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999993630588,
+    "pedalConfidence": 0.9845794254702812,
+    "milliseconds": 135.9192
+  },
+  {
+    "decision": 77,
+    "time": 22.800000000000672,
+    "speed": 40.19999999999885,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 99.51708994445067
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 164.28271032565638
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 126.3229706669299
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 131.16093113734405
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 84.9055305432103
+      }
+    ],
+    "action": "Brake and go STRAIGHT",
+    "steeringConfidence": 0.999999985782188,
+    "pedalConfidence": 0.9999996132228505,
+    "milliseconds": 137.23950000000002
+  },
+  {
+    "decision": 78,
+    "time": 23.100000000000684,
+    "speed": 28.19999999999892,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 100.19225156225518
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 150.99812813829462
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 116.10797066693026
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 120.55471356270724
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 84.3659159751552
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999944637903,
+    "pedalConfidence": 0.9999963197848389,
+    "milliseconds": 137.8911
+  },
+  {
+    "decision": 79,
+    "time": 23.400000000000695,
+    "speed": 34.199999999998866,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 100.77015911040196
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 138.79621013800846
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 106.7254706669305
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 110.81287935869052
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 84.17671484844699
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999992877571,
+    "pedalConfidence": 0.954235036357725,
+    "milliseconds": 136.0727
+  },
+  {
+    "decision": 80,
+    "time": 23.700000000000706,
+    "speed": 40.19999999999881,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 101.45893621215006
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 124.25339659809919
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 95.54297066693088
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 99.20210813711671
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 83.9512161434734
+      }
+    ],
+    "action": "Brake and go STRAIGHT",
+    "steeringConfidence": 0.9999999953293077,
+    "pedalConfidence": 0.9999996517579648,
+    "milliseconds": 134.9524
+  },
+  {
+    "decision": 81,
+    "time": 24.000000000000718,
+    "speed": 28.199999999998877,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 101.69948741280027
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 110.96881441073738
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 85.32797066693122
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 88.59589056247988
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 83.80613679150557
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999988363468,
+    "pedalConfidence": 0.9999998878406394,
+    "milliseconds": 133.93
+  },
+  {
+    "decision": 82,
+    "time": 24.30000000000073,
+    "speed": 34.19999999999882,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 101.89258236117595
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 98.76689641045127
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 75.94547066693148
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 78.85405635846318
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 84.09156864563016
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999998869245,
+    "pedalConfidence": 0.9509377520200835,
+    "milliseconds": 133.7353
+  },
+  {
+    "decision": 83,
+    "time": 24.60000000000074,
+    "speed": 40.19999999999877,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 102.12272190396418
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 84.22408287054196
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 64.76297066693185
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 67.24328513688938
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 84.43175960845977
+      }
+    ],
+    "action": "Brake and go STRAIGHT",
+    "steeringConfidence": 0.9999999989824253,
+    "pedalConfidence": 0.9999995905891093,
+    "milliseconds": 134.6711
+  },
+  {
+    "decision": 84,
+    "time": 24.90000000000075,
+    "speed": 28.199999999998834,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 101.83679061283527
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 70.93950068318017
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 54.54797066693219
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 56.63706756225255
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 81.63872629206331
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999986322052,
+    "pedalConfidence": 0.9999998616797103,
+    "milliseconds": 134.3753
+  },
+  {
+    "decision": 85,
+    "time": 25.200000000000763,
+    "speed": 34.19999999999878,
+    "sensors": [
+      {
+        "Name": "LEFT 60",
+        "Distance": 101.55978572577845
+      },
+      {
+        "Name": "LEFT 30",
+        "Distance": 58.73758268289419
+      },
+      {
+        "Name": "FRONT",
+        "Distance": 45.16547066693256
+      },
+      {
+        "Name": "RIGHT 30",
+        "Distance": 46.89523335823596
+      },
+      {
+        "Name": "RIGHT 60",
+        "Distance": 67.59649263845465
+      }
+    ],
+    "action": "Accelerate and go STRAIGHT",
+    "steeringConfidence": 0.9999999997301829,
+    "pedalConfidence": 0.9637603383265794,
+    "milliseconds": 133.285
+  }
+]

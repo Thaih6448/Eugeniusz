@@ -1,0 +1,15 @@
+/build/
+/dist/
+/.deps/
+/models/*.gguf
+/models/*.part
+/models/downloads/
+**/bin/
+**/obj/
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.vs/
+.idea/
+.DS_Store

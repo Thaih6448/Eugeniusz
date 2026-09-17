@@ -1,0 +1,41 @@
+{
+  "background": "Sky blue",
+  "layers": [
+    {
+      "name": "ground",
+      "shape": "rectangle",
+      "color": "Green",
+      "x": 0,
+      "y": 0.8,
+      "width": 1,
+      "height": 0.2
+    },
+    {
+      "name": "house",
+      "shape": "rectangle",
+      "color": "White",
+      "x": 0.35,
+      "y": 0.3,
+      "width": 0.3,
+      "height": 0.4
+    },
+    {
+      "name": "roof",
+      "shape": "triangle",
+      "color": "Red",
+      "x": 0.35,
+      "y": 0.1,
+      "width": 0.3,
+      "height": 0.2
+    },
+    {
+      "name": "door",
+      "shape": "rectangle",
+      "color": "Brown",
+      "x": 0.45,
+      "y": 0.45,
+      "width": 0.05,
+      "height": 0.15
+    }
+  ]
+}

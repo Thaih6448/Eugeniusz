@@ -1,0 +1,14 @@
+{
+  "background": "Sky blue",
+  "layers": [
+    {
+      "name": "red_square",
+      "shape": "rectangle",
+      "color": "Red",
+      "x": 0.25,
+      "y": 0.375,
+      "width": 0.5,
+      "height": 0.375
+    }
+  ]
+}

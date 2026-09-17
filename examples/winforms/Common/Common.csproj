@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../bindings/dotnet/Eugeniusz/Eugeniusz.csproj" />
+    <Compile Include="../../common/SampleRuntime.cs" Link="SampleRuntime.cs" />
+  </ItemGroup>
+</Project>

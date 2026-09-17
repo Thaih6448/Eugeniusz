@@ -1,0 +1,173 @@
+{
+  "profile": "light",
+  "model_sha256": "da2572f16c06133561ce56accaa822216f2391ef4d37fba427801cd6736417d4",
+  "gpu": true,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "threads": 4,
+  "context_size": 2048,
+  "load_seconds": 0.6599916999984998,
+  "median_ms": 16.728300019167364,
+  "max_ms": 90.3837000078056,
+  "diagnostic_accuracy": 0.8333333333333334,
+  "gpu_baseline": {
+    "name": "NVIDIA GeForce RTX 4060 Ti",
+    "used_mib": 3994,
+    "total_mib": 16380
+  },
+  "gpu_total_peak_mib": 4902,
+  "note": "12 authored sanity cases, not a held-out quality benchmark. GPU memory is sampled total device usage, including other applications. Performance excludes load and warmup. Temperature=1, uncalibrated.",
+  "cases": [
+    {
+      "state": "I was charged twice for my subscription.",
+      "label": 0,
+      "choice": 0,
+      "value": 0.0,
+      "confidence": 0.9999962866625718,
+      "latency_ms": 49.286499997833744,
+      "probabilities": [
+        0.9999962866625718,
+        3.563636194474415e-06,
+        1.4970123382747633e-07
+      ]
+    },
+    {
+      "state": "My package has not arrived after three weeks.",
+      "label": 1,
+      "choice": 0,
+      "value": 0.0,
+      "confidence": 0.8188996491882108,
+      "latency_ms": 85.81270001013763,
+      "probabilities": [
+        0.8188996491882108,
+        0.18065497229082986,
+        0.00044537852095937277
+      ]
+    },
+    {
+      "state": "The application crashes whenever I press Save.",
+      "label": 2,
+      "choice": 2,
+      "value": 2.0,
+      "confidence": 0.9597329046489281,
+      "latency_ms": 90.3837000078056,
+      "probabilities": [
+        0.03852178047859171,
+        0.0017453148724801552,
+        0.9597329046489281
+      ]
+    },
+    {
+      "state": "Please send me an invoice for last month's payment.",
+      "label": 0,
+      "choice": 0,
+      "value": 0.0,
+      "confidence": 0.999992710390627,
+      "latency_ms": 30.566300003556535,
+      "probabilities": [
+        0.999992710390627,
+        7.172320889830001e-06,
+        1.1728848321755541e-07
+      ]
+    },
+    {
+      "state": "Where is my parcel? The tracking page says it is lost.",
+      "label": 1,
+      "choice": 1,
+      "value": 1.0,
+      "confidence": 0.9680108343316685,
+      "latency_ms": 16.92720002029091,
+      "probabilities": [
+        0.031941265127578895,
+        0.9680108343316685,
+        4.790054075256532e-05
+      ]
+    },
+    {
+      "state": "The parcel arrived yesterday.",
+      "label": 1,
+      "choice": 1,
+      "value": 0.9999976000485783,
+      "confidence": 0.9999976000485783,
+      "latency_ms": 16.147599992109463,
+      "probabilities": [
+        2.3999514215896562e-06,
+        0.9999976000485783
+      ]
+    },
+    {
+      "state": "The parcel did not arrive.",
+      "label": 0,
+      "choice": 0,
+      "value": 0.1363651602113534,
+      "confidence": 0.8636348397886465,
+      "latency_ms": 17.237799998838454,
+      "probabilities": [
+        0.8636348397886465,
+        0.1363651602113534
+      ]
+    },
+    {
+      "state": "I would like a refund.",
+      "label": 1,
+      "choice": 1,
+      "value": 0.6291046178570252,
+      "confidence": 0.6291046178570252,
+      "latency_ms": 16.314300009980798,
+      "probabilities": [
+        0.3708953821429749,
+        0.6291046178570252
+      ]
+    },
+    {
+      "state": "I am happy with the product and do not want my money back.",
+      "label": 0,
+      "choice": 0,
+      "value": 0.0022040682702760086,
+      "confidence": 0.9977959317297241,
+      "latency_ms": 16.16150001063943,
+      "probabilities": [
+        0.9977959317297241,
+        0.0022040682702760086
+      ]
+    },
+    {
+      "state": "The entire production service is down for every user.",
+      "label": 2,
+      "choice": 2,
+      "value": 1.999991484231915,
+      "confidence": 0.9999920288085199,
+      "latency_ms": 16.130700008943677,
+      "probabilities": [
+        5.445766049186936e-07,
+        7.4266148752644115e-06,
+        0.9999920288085199
+      ]
+    },
+    {
+      "state": "There is a typo in a tooltip. All features work.",
+      "label": 0,
+      "choice": 0,
+      "value": 0.019224761975632897,
+      "confidence": 0.9885261700183231,
+      "latency_ms": 16.529400018043816,
+      "probabilities": [
+        0.9885261700183231,
+        0.003722897987720757,
+        0.00775093199395607
+      ]
+    },
+    {
+      "state": "Search works but takes ten seconds instead of one.",
+      "label": 1,
+      "choice": 2,
+      "value": 1.9992064161119625,
+      "confidence": 0.9995444312038886,
+      "latency_ms": 16.046600008849055,
+      "probabilities": [
+        0.000338015091926123,
+        0.00011755370418521486,
+        0.9995444312038886
+      ]
+    }
+  ]
+}
