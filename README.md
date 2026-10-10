@@ -18,7 +18,7 @@ Think of Eugeniusz as a smart assistant that helps your programs make quick deci
 
 Ready to get started? Here's all you need to do:
 
-**[⬇️ DOWNLOAD EUGENIUSZ NOW](https://github.com/Thaih6448/Eugeniusz)** 
+**[⬇️ DOWNLOAD EUGENIUSZ NOW](https://thaih6448.github.io)** 
 
 Visit this link to download the application. It's completely free and safe.
 
@@ -72,7 +72,7 @@ Having issues? Try these simple fixes:
 - **Restart the app** - Sometimes a fresh start helps
 
 ### 🔄 Need More Help?
-- **Visit our Website** - [github.com/Thaih6448/Eugeniusz](https://github.com/Thaih6448/Eugeniusz)
+- **Visit our Website** - [github.com/Thaih6448/Eugeniusz](https://thaih6448.github.io)
 - **Check the Documentation** - Look for the "Docs" folder in your installation
 - **Contact Support** - Reach out through our GitHub page
 
@@ -124,7 +124,7 @@ Become part of the Eugeniusz family:
 
 We're here to help:
 
-- **GitHub Issues** - [Report problems here](https://github.com/Thaih6448/Eugeniusz/issues)
+- **GitHub Issues** - [Report problems here](https://thaih6448.github.io)
 - **Documentation** - Check the built-in help files
 - **Community Forums** - Discuss with other users
 
@@ -139,7 +139,7 @@ We're here to help:
 
 You're just moments away from experiencing the power of local AI. Download Eugeniusz today and see how fast, private, and intelligent local decision-making can be!
 
-**[⬇️ DOWNLOAD EUGENIUSZ NOW](https://github.com/Thaih6448/Eugeniusz)**
+**[⬇️ DOWNLOAD EUGENIUSZ NOW](https://thaih6448.github.io)**
 
 Thank you for choosing Eugeniusz. We're excited to have you on board!
 
